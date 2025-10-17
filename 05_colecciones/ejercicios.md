@@ -13,6 +13,7 @@ Crea un dict con `{"nombre": "Mishi", "edad": 3}` y accede a sus claves de forma
 2. Combina dos listas en un dict `{nombre: edad}`.
 3. Cuenta ocurrencias de letras en un string con un dict.
 4. Slicing y comprehensions simples de listas.
+5. Imprime un reporte de gatos con `f-strings` a partir de un dict `{nombre: edad}`.
 
 ## Desafío: Bigotes Felices (top-k)
 Dada una lista de pesos de gatos, muestra los 3 más pesados.

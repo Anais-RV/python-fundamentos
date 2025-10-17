@@ -32,14 +32,16 @@ Gracias por contribuir a este repositorio pedagógico. Sigue estos pasos preciso
 ## Rama `solutions`
 - Las soluciones oficiales viven en la rama `solutions`, en carpetas espejo bajo `soluciones/`.
 - Cómo verlas sin mezclar:
-  1. Añade el remoto del repo original (si aún no lo tienes):
-     - `git remote add upstream https://github.com/ORG/python-ejercicios.git`
-  2. Trae la rama solutions:
-     - `git fetch upstream solutions:solutions`
-  3. Explora un archivo puntual sin cambiar de rama:
+  1. Si trabajas en tu fork, añade el remoto del repo original (sólo una vez):
+     - `git remote add upstream <URL-del-repo-original>`
+  2. Trae la rama solutions desde el remoto que corresponda (tu fork u upstream):
+     - `git fetch origin solutions:solutions` (si tu fork ya la tiene)
+     - o `git fetch upstream solutions:solutions`
+  3. Ver un archivo puntual sin cambiar de rama:
      - `git show solutions:soluciones/01_intro/ejemplos/hola.py`
-  4. Opcional: crea una rama local temporal basada en `solutions` para estudiar:
+  4. Opcional: crear una rama local temporal para explorar sin mezclar:
      - `git switch --detach solutions`
+  5. Importante: no mezcles `solutions` en `main` ni `revision`. Úsala sólo como referencia.
 
 ## Comandos útiles
 - Crear entorno e instalar deps: `make setup`

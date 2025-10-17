@@ -13,6 +13,7 @@ Crea `def sumar(nums):` que sume elementos y retorne el total. Valida que `nums`
 2. `area_rectangulo(a, b)`
 3. `formatear_gato(nombre, edad)` -> string con f-string
 4. `promedio(nums)` con manejo de lista vacía
+5. `leer_edad()` pide una edad por `input()`, valida `ValueError` y retorna un entero o `None`.
 
 ## Desafío: Bigotes Felices (filtro)
 Dada una lista de gatos con edades, retorna sólo los mayores de 5 años.

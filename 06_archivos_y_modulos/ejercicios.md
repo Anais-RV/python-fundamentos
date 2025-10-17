@@ -13,6 +13,7 @@ Lee `escribir.txt` e imprime las líneas numeradas.
 2. Crea un módulo `utiles.py` con `leer_lineas(ruta)` y `guardar_lineas(ruta, lineas)`.
 3. Usa `utiles` desde otro script `app.py`.
 4. Maneja `FileNotFoundError` de forma amable.
+ 5. Pide por `input()` una ruta de archivo y valida si existe antes de leer.
 
 ## Desafío: Bigotes Felices (logs)
 Dado un archivo de logs `visitas.log`, cuenta por día cuántas visitas hubo y guarda un resumen.
