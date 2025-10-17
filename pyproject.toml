@@ -1,0 +1,33 @@
+[tool.ruff]
+# Reglas básicas y formato para principiantes
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+  "E",  # pycodestyle
+  "F",  # pyflakes
+  "W",  # warnings
+  "I",  # isort (orden de imports)
+  "B",  # flake8-bugbear
+  "UP"  # pyupgrade
+]
+ignore = [
+  "E203",  # por compatibilidad con formatters
+  "E266",
+  "E401",
+  "E501",  # permitimos líneas más largas en casos puntuales
+  "UP015"  # permitir modo explícito en open()
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["."]
