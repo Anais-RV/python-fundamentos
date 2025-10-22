@@ -1,63 +1,99 @@
 # 🐍 Python Fundamentos
 
-> Ejercicios guiados y prácticos para aprender los fundamentos de **Python** — incluye guía paso a paso, flujo GitHub real *(fork → rama → PR)* y comprobaciones automáticas con lint y tests.
+Repositorio pedagógico de ejercicios de Python pensado para estudiantes con base en bases de datos y experiencia previa con GitHub (forks, ramas y PRs). Incluye estructura clara, ejercicios graduados, ejemplos, CI, linting y una guía de contribución precisa.
 
 ---
 
-## 🎯 Objetivo
-Este repositorio te acompaña en tus primeros pasos con Python, siguiendo un enfoque **profesional y pedagógico**. Aprenderás a escribir código limpio, estructurado y probado mientras practicas el flujo de trabajo real de un desarrollador con Git y GitHub.
+## 📑 Índice
+
+- [🎯 Requisitos](#-requisitos)
+- [👤 Flujo de trabajo del alumno](#-flujo-de-trabajo-del-alumno)
+- [📝 Normas de commits](#-normas-de-commits)
+- [🧪 Cómo ejecutar tests y lint](#-cómo-ejecutar-tests-y-lint)
+- [📚 Documentación del repositorio](#-documentación-del-repositorio)
+  - [📖 Cheat Sheets de Python](#-cheat-sheets-de-python)
+  - [📋 Guías del curso](#-guías-del-curso)
+- [📂 Estructura del repositorio](#-estructura-del-repositorio)
+- [🗺️ Módulos de aprendizaje](#️-módulos-de-aprendizaje)
 
 ---
 
-## 🧭 Flujo de trabajo
+## 🎯 Requisitos
+- Python 3.12 o superior
+- Git
+- make (opcional pero recomendado para ejecutar tareas locales)
 
-1. **Fork** de este repositorio a tu cuenta.
-2. **Clona** tu fork y crea una rama para tus ejercicios:
-   ```bash
-   git clone <tu-fork>
-   cd python-fundamentos
-   git switch -c ejercicios-TuNombre
-   ```
-3. Activa tu entorno y prepara las dependencias:
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate  # macOS/Linux
-   .venv\Scripts\activate   # Windows
-   pip install -U pip pytest ruff
-   ```
-4. Trabaja por bloques (01 → 06) y haz commits pequeños y descriptivos.
-5. Abre una Pull Request hacia la rama `revision` del repo original.
-6. Espera el ✅ del CI antes de solicitar revisión.
+> 💡 **Importante sobre entornos virtuales**: Este proyecto utiliza entornos virtuales (`.venv`) para aislar dependencias. Es una práctica profesional estándar que evita conflictos entre proyectos. Consulta [`cheatsheets/01_intro.md`](./cheatsheets/01_intro.md#-entornos-virtuales-venv) para aprender qué son y por qué son importantes.
 
----
+## 👤 Flujo de trabajo del alumno
+1. Haz un fork de este repositorio en tu cuenta.
+2. Clona tu fork localmente.
+3. Crea una rama para tus ejercicios: `ejercicios-Nombre` (usa tu nombre o alias).
+4. Trabaja con commits pequeños y descriptivos.
+5. Abre un Pull Request (PR) desde tu rama `ejercicios-Nombre` hacia la rama `revision` de este repo.
+6. Participa en la revisión por pares y atiende comentarios de la formadora.
 
-## 🧰 Requisitos técnicos
+## 📝 Normas de commits
+Prefijos recomendados:
+- `feat:` nueva funcionalidad/ejercicio
+- `fix:` correcciones
+- `refactor:` reestructuración sin cambiar comportamiento
+- `test:` pruebas
+- `docs:` documentación
 
-- **Python 3.12 o superior**
-- **Git**
-- **make** (opcional, pero recomendado para automatizar tareas locales)
+Ejemplo: `feat: agregar ejercicios guiados de 01_intro`
 
-### Comandos disponibles si tienes `make`:
-```bash
-make setup   # crea entorno e instala dependencias
-make lint    # revisión de estilo con Ruff
-make test    # ejecuta tests automáticos con Pytest
-```
+## 🧪 Cómo ejecutar tests y lint
+Con make:
+- `make setup` (crea el entorno y instala dependencias mínimas)
+- `make test`
+- `make lint`
 
-### Alternativa manual:
-```bash
-python -m venv .venv
-source .venv/bin/activate      # o .venv\Scripts\activate en Windows
-pip install -U pip ruff pytest
-pytest -q
-ruff check .
-```
+Sin make (alternativa manual):
+ - Windows PowerShell: `python -m venv .venv; .venv/Scripts/Activate.ps1; python -m pip install -U pip ruff pytest`
+- macOS/Linux: `python3 -m venv .venv; source .venv/bin/activate; python -m pip install -U pip ruff pytest`
+- Ejecutar: `pytest -q` y `ruff check .`
+
+## 📚 Documentación del repositorio
+
+Este repositorio contiene **dos tipos de documentación** con propósitos diferentes:
+
+### 📖 Cheat Sheets de Python
+
+📁 **Carpeta: [`cheatsheets/`](./cheatsheets/)** - Referencia técnica de Python
+
+Hojas de referencia rápida para consultar mientras programas:
+
+| Archivo | Contenido |
+|---------|-----------|
+| [� INDICE](./cheatsheets/INDICE.md) | Índice y guía de uso de los cheat sheets |
+| [01_intro.md](./cheatsheets/01_intro.md) | Variables, tipos básicos, **entornos virtuales** ⭐ |
+| [02_estructuras.md](./cheatsheets/02_estructuras.md) | Strings, números, booleanos, **f-strings** ⭐ |
+| [03_control_flujo.md](./cheatsheets/03_control_flujo.md) | if/elif/else, for, while, break/continue |
+| [04_funciones.md](./cheatsheets/04_funciones.md) | Definición, parámetros, return, scope, lambdas |
+| [05_colecciones.md](./cheatsheets/05_colecciones.md) | Listas, tuplas, diccionarios, sets |
+| [06_archivos_y_modulos.md](./cheatsheets/06_archivos_y_modulos.md) | I/O archivos, imports, JSON/CSV |
+| [🚀 python_quick_reference.md](./cheatsheets/python_quick_reference.md) | **Referencia rápida todo-en-uno** |
+
+💡 **Tip**: Mantén abierto `python_quick_reference.md` mientras programas.
+
+### 📋 Guías del curso
+
+📁 **Carpeta: [`docs/`](./docs/)** - Organización pedagógica
+
+Documentación sobre cómo está estructurado el curso:
+
+| Archivo | Contenido |
+|---------|-----------|
+| [roadmap.md](./docs/roadmap.md) | Ruta de aprendizaje y tiempos estimados |
+| [rubrica-evaluacion.md](./docs/rubrica-evaluacion.md) | Criterios de evaluación |
+| [checklist-revision-pares.md](./docs/checklist-revision-pares.md) | Guía para revisión por pares |
 
 ---
 
 ## 📂 Estructura del repositorio
 
-```plaintext
+```
 python-fundamentos/
 ├─ 01_intro/                → primeros pasos con Python
 ├─ 02_estructuras/          → tipos básicos y operadores
@@ -66,60 +102,69 @@ python-fundamentos/
 ├─ 05_colecciones/          → listas, tuplas, diccionarios, sets
 ├─ 06_archivos_y_modulos/   → manejo de archivos e imports
 ├─ 07_mini_proyectos/       → pequeños retos aplicados
-├─ tests/                   → pruebas automáticas con pytest
-└─ docs/                    → guías, rúbrica y checklist
+├─ cheatsheets/             → � referencia rápida de Python (sintaxis, ejemplos)
+├─ docs/                    → 📋 guías del curso (roadmap, rúbricas)
+└─ tests/                   → pruebas automáticas con pytest
 ```
 
 ---
 
-## 🧠 Cómo trabajar los ejercicios
+## 🗺️ Módulos de aprendizaje
 
-Cada carpeta contiene:
+Cada módulo contiene:
+- 📖 **README.md** - Objetivos y conceptos clave
+- 📝 **ejercicios.md** - Ejercicios guiados y autónomos
+- 💻 **ejemplos/** - Código de ejemplo ejecutable
 
-- **Ejercicios guiados** con pasos numerados.
-- **Ejercicios autónomos** para practicar.
-- **Un desafío contextualizado** (por ejemplo, Bigotes Felices).
-- **Sección de Errores comunes** y **Tiempo estimado**.
+### Ruta sugerida
 
-Consulta `docs/roadmap.md` para ver el orden sugerido y los objetivos de aprendizaje de cada módulo.
-
----
-
-## ✍️ Convenciones de commits
-
-Prefijos recomendados:
-
-- `feat:` nueva funcionalidad o ejercicio
-- `fix:` corrección de errores
-- `refactor:` mejora sin cambio funcional
-- `test:` añadidos o ajustes en pruebas
-- `docs:` cambios en documentación
-
-Ejemplo:
-```bash
-git commit -m "feat(intro): completar ejercicio 3 sobre variables"
-```
-
----
-
-## 🧩 Verificación rápida
-
-Antes de subir tu código, asegúrate de que todo pasa correctamente:
-```bash
-ruff check .
-pytest -q
-```
-Si ambos comandos terminan sin errores, el CI aprobará tu PR automáticamente.
+1. **[01_intro](./01_intro/)** - Primeros pasos
+   - Variables, tipos básicos, entrada/salida
+   - ⚠️ **Configura tu entorno virtual aquí**
+   
+2. **[02_estructuras](./02_estructuras/)** - Tipos de datos
+   - Strings, números, booleanos, conversiones
+   - 📚 Aprende f-strings (muy importante)
+   
+3. **[03_control_flujo](./03_control_flujo/)** - Decisiones y repeticiones
+   - if/elif/else, for, while
+   
+4. **[04_funciones](./04_funciones/)** - Organización del código
+   - Definir funciones, parámetros, return
+   
+5. **[05_colecciones](./05_colecciones/)** - Estructuras de datos
+   - Listas, tuplas, diccionarios, sets
+   
+6. **[06_archivos_y_modulos](./06_archivos_y_modulos/)** - Persistencia y organización
+   - Leer/escribir archivos, imports
+   
+7. **[07_mini_proyectos](./07_mini_proyectos/)** - Aplicación práctica
+   - Proyectos integradores
 
 ---
 
-## 🪶 Licencia
+## 🎓 Próximos pasos
 
-📄 MIT License — este material puede reutilizarse con fines educativos citando la autoría de la desarrolladora: Anaïs Rodríguez Villanueva.
+1. ✅ Lee el [roadmap](./docs/roadmap.md) para entender la estructura del curso
+2. ✅ Configura tu entorno según [`cheatsheets/01_intro.md`](./cheatsheets/01_intro.md)
+3. ✅ Haz un fork del repositorio
+4. ✅ Empieza con [`01_intro/ejercicios.md`](./01_intro/ejercicios.md)
+5. ✅ Mantén abierta la [referencia rápida](./cheatsheets/python_quick_reference.md)
+
+**¡Feliz aprendizaje! 🚀**
 
 ---
 
-## 💡 Créditos
+## 👥 Créditos
 
-Desarrollado con fines pedagógicos y vocación docente por **Anaïs Rodríguez Villanueva**, en tiempo personal, como recurso abierto para el aprendizaje de Python.  
-El contenido se ofrece bajo licencia **MIT**, permitiendo su uso educativo libre con el debido reconocimiento de autoría.
+**Autoría y diseño pedagógico**: Anaïs Rodríguez Villanueva
+
+Este material ha sido desarrollado con fines educativos como parte de un programa de formación en desarrollo web e inteligencia artificial.
+
+### 📄 Licencia
+
+Este proyecto está bajo licencia MIT. Puedes reutilizar y adaptar el material citando la autoría original.
+
+### 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, consulta [CONTRIBUTING.md](./CONTRIBUTING.md) para más detalles sobre cómo participar en el proyecto.
