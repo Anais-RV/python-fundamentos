@@ -22,7 +22,6 @@ Instrucciones:
 
 # TODO 1: Importa el módulo json
 # import json
-import os  # Ya está importado para verificar si existe el archivo
 
 
 # Nombre del archivo donde se guardará el historial
@@ -93,7 +92,7 @@ def mostrar_historial():
     if not historial:
         print("📭 No hay operaciones en el historial")
         return
-    
+
     print("\n📜 HISTORIAL DE OPERACIONES:")
     for i, op in enumerate(historial, 1):
         print(f"{i}. {op['num1']} {op['operacion']} {op['num2']} = {op['resultado']:.2f}")
@@ -103,7 +102,7 @@ def mostrar_historial():
 
 def cargar_historial():
     """Carga el historial desde el archivo JSON.
-    
+
     Returns:
         Lista con el historial cargado, o lista vacía si no existe el archivo.
     """
@@ -121,7 +120,7 @@ def cargar_historial():
     #     # El archivo existe pero está corrupto
     #     print("⚠️  Archivo de historial corrupto, iniciando uno nuevo")
     #     return []
-    
+
     pass
     return []  # Borra esto cuando implementes la función
 
@@ -137,24 +136,24 @@ def guardar_historial_archivo():
     #     print("✅ Historial guardado correctamente")
     # except Exception as e:
     #     print(f"❌ Error al guardar el historial: {e}")
-    
+
     pass
 
 
 def limpiar_historial():
     """Limpia el historial en memoria y elimina el archivo."""
     global historial
-    
+
     # TODO 4: Limpia el historial
     # Pide confirmación al usuario
     # confirmacion = input("⚠️  ¿Estás seguro de que quieres limpiar el historial? (s/n): ")
     # if confirmacion.lower() != "s":
     #     print("❌ Operación cancelada")
     #     return
-    
+
     # Vacía la lista en memoria
     # historial = []
-    
+
     # Elimina el archivo si existe
     # try:
     #     if os.path.exists(ARCHIVO_HISTORIAL):
@@ -162,7 +161,7 @@ def limpiar_historial():
     #     print("🗑️  Historial limpiado correctamente")
     # except Exception as e:
     #     print(f"❌ Error al eliminar el archivo: {e}")
-    
+
     pass
 
 
@@ -170,44 +169,44 @@ def limpiar_historial():
 
 def main():
     """Función principal de la calculadora."""
-    
+
     # TODO 5: Carga el historial al iniciar
     # global historial
     # print("🔄 Cargando historial...")
     # historial = cargar_historial()
-    
+
     # while True:
         # mostrar_menu()
         # opcion = input("\nElige una opción: ")
-        
+
         # TODO 6: Actualiza la condición de salir (ahora es opción 7)
         # if opcion == "7":
         #     print("💾 Guardando historial...")
         #     guardar_historial_archivo()
         #     print("¡Hasta pronto! 👋")
         #     break
-        
+
         # TODO 7: Añade la opción 5 (ver historial)
         # if opcion == "5":
         #     mostrar_historial()
         #     continue
-        
+
         # TODO 8: Añade la opción 6 (limpiar historial)
         # if opcion == "6":
         #     limpiar_historial()
         #     continue
-        
+
         # TODO 9: Actualiza la validación de opciones (ahora son 1-6)
         # if opcion not in ["1", "2", "3", "4", "5", "6"]:
         #     print("❌ Opción no válida")
         #     continue
-        
+
         # num1, num2 = obtener_numeros()
-        
+
         # if opcion == "4" and num2 == 0:
         #     print("❌ No se puede dividir por cero")
         #     continue
-        
+
         # if opcion == "1":
         #     resultado = sumar(num1, num2)
         #     simbolo = "+"
@@ -220,10 +219,10 @@ def main():
         # elif opcion == "4":
         #     resultado = dividir(num1, num2)
         #     simbolo = "/"
-        
+
         # print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
         # guardar_operacion(num1, num2, simbolo, resultado)
-    
+
     pass
 
 
@@ -232,7 +231,7 @@ if __name__ == "__main__":
 
 
 # ¡FELICIDADES! Has completado toda la serie "La Calculadora que Crece"
-# 
+#
 # 🎉 Lo que has logrado:
 # ✅ v1: Suma básica (input, print, variables)
 # ✅ v2: 4 operaciones (operadores, if/elif, f-strings)

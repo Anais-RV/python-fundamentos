@@ -24,11 +24,11 @@ Instrucciones:
 
 def sumar(a, b):
     """Suma dos números.
-    
+
     Args:
         a: Primer número
         b: Segundo número
-    
+
     Returns:
         La suma de a y b
     """
@@ -50,11 +50,11 @@ def multiplicar(a, b):
 
 def dividir(a, b):
     """Divide dos números.
-    
+
     Args:
         a: Dividendo
         b: Divisor
-    
+
     Returns:
         El resultado de a / b
     """
@@ -77,7 +77,7 @@ def mostrar_menu():
 # TODO 3: Crea una función para obtener dos números del usuario
 def obtener_numeros():
     """Pide dos números al usuario y los devuelve.
-    
+
     Returns:
         Una tupla con los dos números (num1, num2)
     """
@@ -90,32 +90,32 @@ def obtener_numeros():
 # TODO 4: Crea la función principal que contiene el bucle del programa
 def main():
     """Función principal de la calculadora."""
-    
+
     # while True:
         # TODO 4.1: Muestra el menú llamando a la función mostrar_menu()
         # mostrar_menu()
-        
+
         # TODO 4.2: Pide la opción al usuario
         # opcion = input("\nElige una opción: ")
-        
+
         # TODO 4.3: Si elige salir, termina
         # if opcion == "5":
         #     print("¡Hasta pronto! 👋")
         #     break
-        
+
         # TODO 4.4: Valida que la opción sea válida
         # if opcion not in ["1", "2", "3", "4"]:
         #     print("❌ Opción no válida")
         #     continue
-        
+
         # TODO 4.5: Obtén los números llamando a la función obtener_numeros()
         # num1, num2 = obtener_numeros()
-        
+
         # TODO 4.6: Controla división por cero
         # if opcion == "4" and num2 == 0:
         #     print("❌ No se puede dividir por cero")
         #     continue
-        
+
         # TODO 4.7: Llama a la función correspondiente según la opción
         # Nota cómo ahora el código es mucho más limpio
         # if opcion == "1":
@@ -130,10 +130,10 @@ def main():
         # elif opcion == "4":
         #     resultado = dividir(num1, num2)
         #     simbolo = "/"
-        
+
         # TODO 4.8: Muestra el resultado
         # print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
-    
+
     pass
 
 
@@ -144,7 +144,7 @@ def main():
 
 
 # ¡Excelente! Has refactorizado tu calculadora con funciones.
-# 
+#
 # Ventajas de esta versión:
 # ✅ Cada función tiene una responsabilidad clara
 # ✅ El código es reutilizable (puedes importar estas funciones en otros archivos)

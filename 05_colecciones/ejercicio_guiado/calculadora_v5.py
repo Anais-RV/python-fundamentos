@@ -70,7 +70,7 @@ def obtener_numeros():
 
 def guardar_operacion(num1, num2, operacion, resultado):
     """Guarda una operación en el historial.
-    
+
     Args:
         num1: Primer número
         num2: Segundo número
@@ -84,10 +84,10 @@ def guardar_operacion(num1, num2, operacion, resultado):
     #     "operacion": operacion,
     #     "resultado": resultado
     # }
-    
+
     # TODO 3: Añade el diccionario a la lista historial
     # historial.append(operacion_dict)
-    
+
     pass
 
 
@@ -97,16 +97,16 @@ def mostrar_historial():
     # if not historial:
     #     print("📭 No hay operaciones en el historial")
     #     return
-    
+
     # TODO 5: Muestra el título
     # print("\n📜 HISTORIAL DE OPERACIONES:")
-    
+
     # TODO 6: Itera sobre el historial con enumerate()
     # enumerate() nos da el índice (i) y el elemento (op)
     # El segundo parámetro (1) indica que empiece a contar desde 1
     # for i, op in enumerate(historial, 1):
     #     print(f"{i}. {op['num1']} {op['operacion']} {op['num2']} = {op['resultado']:.2f}")
-    
+
     pass
 
 
@@ -114,32 +114,32 @@ def mostrar_historial():
 
 def main():
     """Función principal de la calculadora."""
-    
+
     # while True:
         # mostrar_menu()
         # opcion = input("\nElige una opción: ")
-        
+
         # TODO 7: Actualiza la condición de salir (ahora es la opción 6)
         # if opcion == "6":
         #     print("¡Hasta pronto! 👋")
         #     break
-        
+
         # TODO 8: Añade la nueva opción 5 para ver el historial
         # if opcion == "5":
         #     mostrar_historial()
         #     continue  # Vuelve al menú sin pedir números
-        
+
         # TODO 9: Actualiza la validación (ahora hay 5 opciones válidas)
         # if opcion not in ["1", "2", "3", "4", "5"]:
         #     print("❌ Opción no válida")
         #     continue
-        
+
         # num1, num2 = obtener_numeros()
-        
+
         # if opcion == "4" and num2 == 0:
         #     print("❌ No se puede dividir por cero")
         #     continue
-        
+
         # TODO 10: Realiza la operación y guarda en el historial
         # if opcion == "1":
         #     resultado = sumar(num1, num2)
@@ -153,12 +153,12 @@ def main():
         # elif opcion == "4":
         #     resultado = dividir(num1, num2)
         #     simbolo = "/"
-        
+
         # print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
-        
+
         # TODO 11: Guarda la operación en el historial
         # guardar_operacion(num1, num2, simbolo, resultado)
-    
+
     pass
 
 
@@ -167,7 +167,7 @@ if __name__ == "__main__":
 
 
 # ¡Fantástico! Ahora tu calculadora tiene memoria.
-# 
+#
 # Prueba estos casos:
 # 1. Realiza varias operaciones (5 + 3, 10 - 4, 7 * 2, 15 / 3)
 # 2. Elige "Ver historial" → debe mostrar todas las operaciones

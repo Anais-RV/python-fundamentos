@@ -53,7 +53,7 @@ Instrucciones:
 
 
 # ¡Perfecto! Ahora tu calculadora puede hacer las 4 operaciones básicas
-# 
+#
 # Ejemplos para probar:
 # - 10 + 5 → debe dar 15.00
 # - 10 - 3 → debe dar 7.00
