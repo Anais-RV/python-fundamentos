@@ -2,6 +2,16 @@
 
 Tiempo estimado: 4–5h
 
+---
+
+## 🎯 Ejercicio guiado: La Calculadora que Crece (v5)
+
+Evolución de la calculadora: añade historial de operaciones con listas y diccionarios.
+
+👉 **[Ver guía completa: ejercicio_guiado/GUIA.md](./ejercicio_guiado/GUIA.md)**
+
+---
+
 ## Guiado 1: Lista de gatos
 Crea una lista con 3 nombres y recórrela imprimiendo índices y valores.
 

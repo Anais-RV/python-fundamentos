@@ -266,3 +266,7 @@ if edad > 18:  # Error: no se puede comparar string con int
 - [Documentación oficial de Python](https://docs.python.org/es/3/)
 - [PEP 8 – Guía de estilo](https://pep8.org/)
 - [Real Python - Guías para principiantes](https://realpython.com/)
+
+---
+
+**Autor**: Anaïs Rodríguez Villanueva | **Licencia**: MIT | **Repositorio**: [python-fundamentos](https://github.com/Anais-RV/python-fundamentos)

@@ -2,6 +2,26 @@
 
 Gracias por contribuir a este repositorio pedagógico. Sigue estos pasos precisos para mantener un flujo ordenado.
 
+## 📝 Sobre las contribuciones
+
+Este proyecto fue creado por **Anaïs Rodríguez Villanueva** de forma independiente y vocacional. Al contribuir:
+- ✅ Tu contribución se licenciará bajo los mismos términos (MIT)
+- ✅ La autoría original del proyecto se mantiene como Anaïs Rodríguez Villanueva
+- ✅ Las contribuciones significativas serán reconocidas en este documento
+- ✅ Aceptas que tu contribución puede ser modificada o eliminada si es necesario para mantener la coherencia pedagógica
+
+### Tipos de contribuciones bienvenidas
+- 🐛 Corrección de errores (typos, bugs en código de ejemplo)
+- 📚 Mejoras en documentación o claridad de ejercicios
+- ✨ Nuevos ejercicios o ejemplos complementarios
+- 🧪 Tests adicionales
+- 💡 Sugerencias pedagógicas
+
+**No se aceptan**:
+- ❌ Cambios que eliminen o modifiquen la atribución de autoría
+- ❌ Forks que pretendan comercializar el material sin atribución
+- ❌ Contribuciones que violen los principios educativos del proyecto
+
 ## Flujo de trabajo recomendado
 1. Haz fork del repo en GitHub.
 2. Clona tu fork localmente.
@@ -26,7 +46,7 @@ Gracias por contribuir a este repositorio pedagógico. Sigue estos pasos preciso
 - Evita magia: comenta lo necesario y prioriza legibilidad.
 
 ## Estructura de carpetas
-- Cada módulo está en `01_intro` a `07_mini_proyectos` con su `README.md`, `ejercicios.md` y `ejemplos/`.
+- Cada módulo está en `01_intro` a `07_mini_proyectos` con su `MODULO.md`, `ejercicios.md` y `ejemplos/`.
 - No subas soluciones a `main` ni a `revision`.
 
 ## Rama `solutions`

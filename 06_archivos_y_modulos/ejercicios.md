@@ -2,6 +2,16 @@
 
 Tiempo estimado: 4–5h
 
+---
+
+## 🎯 Ejercicio guiado: La Calculadora que Crece (v6 - FINAL)
+
+Evolución final de la calculadora: añade persistencia con JSON. ¡Proyecto completo!
+
+👉 **[Ver guía completa: ejercicio_guiado/GUIA.md](./ejercicio_guiado/GUIA.md)**
+
+---
+
 ## Guiado 1: Escribir archivo
 Crea `escribir.txt` con tres líneas.
 

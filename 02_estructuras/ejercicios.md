@@ -2,6 +2,16 @@
 
 Tiempo estimado: 3–4h
 
+---
+
+## 🎯 Ejercicio guiado: La Calculadora que Crece (v2)
+
+Evolución de la calculadora: añade las 4 operaciones básicas y usa f-strings.
+
+👉 **[Ver guía completa: ejercicio_guiado/GUIA.md](./ejercicio_guiado/GUIA.md)**
+
+---
+
 ## Guiado 1: Operaciones numéricas
 Paso 1: Crea `operaciones.py` y define `a=10`, `b=3`.
 Paso 2: Calcula suma, resta, multiplicación y división.
