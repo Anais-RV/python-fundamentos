@@ -26,12 +26,16 @@ Repositorio pedagógico de ejercicios de Python pensado para estudiantes con bas
 > 💡 **Importante sobre entornos virtuales**: Este proyecto utiliza entornos virtuales (`.venv`) para aislar dependencias. Es una práctica profesional estándar que evita conflictos entre proyectos. Consulta [`cheatsheets/01_intro.md`](./cheatsheets/01_intro.md#-entornos-virtuales-venv) para aprender qué son y por qué son importantes.
 
 ## 👤 Flujo de trabajo del alumno
+
+> 📘 **Guía completa**: Consulta [`docs/guia-estructura-trabajo.md`](./docs/guia-estructura-trabajo.md) para detalles sobre organización de carpetas, nomenclatura y workflow completo.
+
 1. Haz un fork de este repositorio en tu cuenta.
 2. Clona tu fork localmente.
 3. Crea una rama para tus ejercicios: `ejercicios-Nombre` (usa tu nombre o alias).
-4. Trabaja con commits pequeños y descriptivos.
-5. Abre un Pull Request (PR) desde tu rama `ejercicios-Nombre` hacia la rama `revision` de este repo.
-6. Participa en la revisión por pares y atiende comentarios de la formadora.
+4. Organiza tus soluciones en carpetas `mis_ejercicios/` dentro de cada módulo (ej: `01_intro/mis_ejercicios/01_hola_mundo.py`).
+5. Trabaja con commits pequeños y descriptivos.
+6. Abre un Pull Request (PR) desde tu rama `ejercicios-Nombre` hacia la rama `revision` de este repo.
+7. Participa en la revisión por pares y atiende comentarios de la formadora.
 
 ## 📝 Normas de commits
 Prefijos recomendados:
