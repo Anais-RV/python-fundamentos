@@ -21,9 +21,16 @@ except ValueError:
 # Prueba: 
 # Nombre del gato --> pepe
 # Edad del gato --> viyuela
-# Mensaje mostrado: Gato: pepe (edad: viyuela) ✅
+# Mensaje de salida: Gato: pepe (edad: viyuela) ✅
+
 # Segundo test: imprimir datos de nombre_gato (string: cadena de texto) y de edad_gato (int: numero entero)
 # Prueba: 
 # Nombre del gato --> pepe
 # Edad del gato --> julio
-# Mensaje enviado: Edad inválida ❌
+# Mensaje de salida: Edad inválida ❌
+
+# Tercer test: imprimir los datos validando try/except
+# Prueba: 
+# Nombre del gato --> pepe
+# Edad del gato --> 10
+# Mensaje de salida: Gato: pepe (edad: 10) ✅
