@@ -1,4 +1,4 @@
-texto = input("Escribe algo")
+texto = input("Escribe algo --> ")
 
 print(texto)
 
