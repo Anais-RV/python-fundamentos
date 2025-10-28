@@ -24,7 +24,7 @@ Instrucciones:
 # TODO 1: Crea el bucle principal
 # while True:
 #     # Todo el código va aquí dentro
-
+while True:
 
     # TODO 2: Muestra el menú
     # print("\n=== CALCULADORA ===")
@@ -33,34 +33,52 @@ Instrucciones:
     # print("3. Multiplicar")
     # print("4. Dividir")
     # print("5. Salir")
+    
+    
+    print("\n=== CALCULADORA ===")
+    print("1. Sumar")
+    print("2. Restar")
+    print("3. Multiplicar")
+    print("4. Dividir")
+    print("5. Salir")
+
 
 
     # TODO 3: Pide la opción al usuario
     # opcion = input("\nElige una opción: ")
-
+    opcion = input("\nElige una opción: ")
 
     # TODO 4: Si elige salir (opción 5), termina el programa
     # if opcion == "5":
     #     print("¡Hasta pronto! 👋")
     #     break  # Sale del bucle while
-
+    if opcion == "5":
+        print("¡Hasta pronto!")
+        break
 
     # TODO 5: Valida que la opción sea válida (1, 2, 3 o 4)
     # if opcion not in ["1", "2", "3", "4"]:
     #     print("❌ Opción no válida. Intenta de nuevo.")
     #     continue  # Vuelve al inicio del bucle (muestra el menú de nuevo)
-
+    if opcion not in ["1", "2", "3", "4"]:
+        print("Opción no válida. Intentalo de nuevo.")
 
     # TODO 6: Pide los dos números
     # num1 = float(input("Primer número: "))
     # num2 = float(input("Segundo número: "))
-
+    try:
+        num1 = float(input("Primer número: "))
+        num2 = float(input("Segund número: "))
+    except ValueError:
+        print("Incorrecto.")
 
     # TODO 7: Controla la división por cero
     # if opcion == "4" and num2 == 0:
     #     print("❌ Error: No se puede dividir por cero")
     #     continue  # Vuelve al menú sin hacer la operación
-
+    if opcion == "4" and num2 == 0:
+        print("No se puede dividir por cero.")
+        continue
 
     # TODO 8: Realiza la operación según la opción elegida
     # if opcion == "1":
@@ -75,11 +93,21 @@ Instrucciones:
     # elif opcion == "4":
     #     resultado = num1 / num2
     #     simbolo = "/"
-
-
+    if opcion == "1":
+        resultado = num1 + num2
+        simbolo = "+"
+    elif opcion == "2":
+        resultado = num1 - num2
+        simbolo = "-"
+    elif opcion == "3":
+        resultado = num1 * num2
+        simbolo = "*"
+    elif opcion == "4":
+        resultado = num1 / num2
+        simbolo = "/"
     # TODO 9: Muestra el resultado con f-string
     # print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
-
+    print(f"{num1} {simbolo} {num2} = {resultado:.2f}")
 
 # ¡Excelente trabajo! Ahora tienes una calculadora interactiva que:
 # - Se repite hasta que el usuario quiera salir
