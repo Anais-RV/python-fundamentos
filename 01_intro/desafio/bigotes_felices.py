@@ -7,6 +7,8 @@ nombre_gato = input("Nombre del gato --> ")
 
 edad_gato = input("Edad del gato --> ")
 
+edad_gato = int(edad_gato)
+
 datos = f"Gato: {nombre_gato} (edad: {edad_gato})"
 
 print(datos)
