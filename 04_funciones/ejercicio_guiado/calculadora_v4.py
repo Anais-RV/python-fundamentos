@@ -24,7 +24,7 @@ Instrucciones:
 
 def sumar(a, b):
     """Suma dos números.
-
+    
     Args:
         a: Primer número
         b: Segundo número
@@ -33,20 +33,21 @@ def sumar(a, b):
         La suma de a y b
     """
     # return a + b
-    pass  # Borra esto y escribe el return
+    pass  
+    return a + b
 
 
 def restar(a, b):
     """Resta dos números."""
     # TODO: Implementa la resta
     pass
-
+    return a - b
 
 def multiplicar(a, b):
     """Multiplica dos números."""
     # TODO: Implementa la multiplicación
     pass
-
+    return a * b
 
 def dividir(a, b):
     """Divide dos números.
@@ -60,7 +61,7 @@ def dividir(a, b):
     """
     # TODO: Implementa la división
     pass
-
+    return a / b
 
 # TODO 2: Crea una función para mostrar el menú
 def mostrar_menu():
@@ -72,6 +73,12 @@ def mostrar_menu():
     # print("4. Dividir")
     # print("5. Salir")
     pass
+    print("\n=== CALCULADORA ===")
+    print("1. Sumar")
+    print("2. Restar")
+    print("3. Multiplicar")
+    print("4. Dividir")
+    print("5. Salir")
 
 
 # TODO 3: Crea una función para obtener dos números del usuario
@@ -85,7 +92,13 @@ def obtener_numeros():
     # num2 = float(input("Segundo número: "))
     # return num1, num2
     pass
-
+    try:
+        num1 = float(input("Primer número: "))
+        num2 = float(input("Segundo: "))
+        return num1, num2
+    except ValueError:
+        print("Entrada incorrecta.")
+        return obtener_numeros()
 
 # TODO 4: Crea la función principal que contiene el bucle del programa
 def main():
@@ -135,13 +148,41 @@ def main():
         # print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
 
     pass
-
+    while True:
+        mostrar_menu()
+        opcion = input("\nElige una opción: ")
+        if opcion == 5:
+            print("¡Hasta pronto!")
+            break
+        if opcion not in ["1", "2", "3", "4"]:
+            print("¡Opción no válida!")
+            continue
+        num1, num2 = obtener_numeros()
+        
+        if opcion == "4" and num2 == 0:
+            print("No se puede dividir por cero...")
+            continue
+        if opcion == "1":
+            resultado = sumar(num1, num2)
+            simbolo = "+"
+        elif opcion == "2":
+            resultado = restar(num1, num2)
+            simbolo = "-"
+        elif opcion == "3":
+            resultado = multiplicar(num1, num2)
+            simbolo = "*"
+        elif opcion == "4":
+            resultado = dividir(num1, num2)
+            simbolo = "/"
+            
+        print(f"{num1} {simbolo} {num2} = {resultado:.2f}")
 
 # TODO 5: Punto de entrada del programa
 # Este patrón permite que el archivo sea importable sin ejecutarse automáticamente
 # if __name__ == "__main__":
 #     main()
-
+if __name__ == "__main__":
+    main()
 
 # ¡Excelente! Has refactorizado tu calculadora con funciones.
 #
