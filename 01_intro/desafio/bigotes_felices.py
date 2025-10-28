@@ -20,6 +20,7 @@ try:
     print(datos)
 
 except ValueError:
+    # Muestra mensaje de error si edad_gato es un valor string
     print("Edad inválida")
 
 # Primer test: imprimir datos introducidos de tipo string.
