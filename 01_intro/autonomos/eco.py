@@ -1,0 +1,1 @@
+texto = input("Escribe algo")
