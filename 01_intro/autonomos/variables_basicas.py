@@ -1,3 +1,5 @@
+# Programa que combine nombre y ciudad en un string: 'Ana vive en Lima'
+
 # Variable nombre
 nombre = "David"
 
