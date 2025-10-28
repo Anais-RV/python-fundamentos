@@ -14,3 +14,9 @@ datos = f"Gato: {nombre_gato} (edad: {edad_gato})"
 print(datos)
 
 # Primer test: imprimir datos introducidos de tipo string. Completado ✅
+# Segundo test: imprimir datos de nombre_gato (string: cadena de texto) y de edad_gato (int: numero entero)
+# Prueba: 
+# Nombre del gato --> pepe
+# Edad del gato --> julio
+# Error ❌
+# Motivo: ValueError: invalid literal for int() with base 10: 'julio'
