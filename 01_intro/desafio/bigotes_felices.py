@@ -23,4 +23,4 @@ except ValueError:
 # Nombre del gato --> pepe
 # Edad del gato --> julio
 # Error ❌
-# Motivo: ValueError: invalid literal for int() with base 10: 'julio'
+# Mensaje enviado: Edad inválida
