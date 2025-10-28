@@ -1,3 +1,5 @@
+# Programa que repite lo que el usuario escribe
+
 # Pedimos al usuario que escriba algo
 texto = input("Escribe algo --> ")
 
