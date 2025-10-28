@@ -3,6 +3,7 @@
 # y muestre: `Gato: <nombre> (edad: <edad>)`. 
 # Si la edad no es un número, muestra `Edad inválida`. 
 
+# Variable nombre_gato a introducir dato string
 nombre_gato = input("Nombre del gato --> ")
 
 edad_gato = input("Edad del gato --> ")
