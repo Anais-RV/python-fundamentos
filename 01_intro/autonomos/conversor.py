@@ -7,9 +7,10 @@ try:
     numero_conv = float(numero_conv)
     print(f"Perfecto! Se ha convertido {numero_conv} en un valor float: {type(numero_conv)}")
 except ValueError:
-    print(f"Lo siento! '{numero_conv}' no es un número válido. Por favor, vuelva a ejecutar de nuevo el archivo")
+    print(f"Lo siento! '{numero_conv}' no es un número válido. Por favor, vuelva a ejecutar de nuevo el archivo sin ningún carácter.")
 
 # Conversion valor 45 convertido a float con éxito ✅
 
 # Conversion valor 'pepe' convertido a float fallo ❌
 # Razón: ValueError: could not convert string to float: 'pepe'
+# Fallo resuelto con try/except
