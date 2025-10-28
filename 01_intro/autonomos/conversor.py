@@ -1,3 +1,5 @@
+# Programa que pida un número y lo convierta en float, manejando ValueError con un mensaje amable
+
 # Variable a introducir un dato
 numero_conv = input("Introduce un número a convertirlo en float --> ")
 
