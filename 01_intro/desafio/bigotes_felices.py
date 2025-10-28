@@ -4,3 +4,5 @@
 # Si la edad no es un número, muestra `Edad inválida`. 
 
 nombre_gato = input("Nombre del gato --> ")
+
+edad_gato = input("Edad del gato --> ")
