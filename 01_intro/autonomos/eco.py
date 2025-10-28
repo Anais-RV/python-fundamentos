@@ -1,3 +1,4 @@
+# Pedimos al usuario que escriba algo
 texto = input("Escribe algo --> ")
 
 print(texto)
