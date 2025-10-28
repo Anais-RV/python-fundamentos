@@ -7,11 +7,15 @@ nombre_gato = input("Nombre del gato --> ")
 
 edad_gato = input("Edad del gato --> ")
 
-edad_gato = int(edad_gato)
+try: 
+    edad_gato = int(edad_gato)
 
-datos = f"Gato: {nombre_gato} (edad: {edad_gato})"
+    datos = f"Gato: {nombre_gato} (edad: {edad_gato})"
 
-print(datos)
+    print(datos)
+
+except ValueError:
+    print("Edad inválida")
 
 # Primer test: imprimir datos introducidos de tipo string. Completado ✅
 # Segundo test: imprimir datos de nombre_gato (string: cadena de texto) y de edad_gato (int: numero entero)
