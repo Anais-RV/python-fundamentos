@@ -13,6 +13,7 @@ try:
     # Intentamos convertir valor str a int
     edad_gato = int(edad_gato)
 
+    # Variable datos a mostrar mensaje de los datos introducidos por el usuario
     datos = f"Gato: {nombre_gato} (edad: {edad_gato})"
 
     print(datos)
