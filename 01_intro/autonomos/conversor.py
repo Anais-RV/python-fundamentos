@@ -1,11 +1,12 @@
 # Variable a introducir un dato
 numero_conv = input("Introduce un número a convertirlo en float --> ")
 
-# Imprimir numero introducido y su tipo
+# Imprimir numero introducido y su tipo de dato
 print(f"Número introducido: {numero_conv}")
 print(f"Tipo de dato: {type(numero_conv)}")
 
 try:
+    # Intentamos convertir el dato a float
     numero_conv = float(numero_conv)
     print(f"Perfecto! Se ha convertido {numero_conv} en un valor float: {type(numero_conv)}")
 except ValueError:
