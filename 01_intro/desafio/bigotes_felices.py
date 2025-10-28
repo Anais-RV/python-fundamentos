@@ -6,6 +6,7 @@
 # Variable nombre_gato a introducir dato string
 nombre_gato = input("Nombre del gato --> ")
 
+# Variable edad_gato a introducir dato int
 edad_gato = input("Edad del gato --> ")
 
 try: 
