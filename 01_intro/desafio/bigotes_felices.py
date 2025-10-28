@@ -10,3 +10,5 @@ edad_gato = input("Edad del gato --> ")
 datos = f"Gato: {nombre_gato} (edad: {edad_gato})"
 
 print(datos)
+
+# Primer test: imprimir datos introducidos de tipo string. Completado ✅
