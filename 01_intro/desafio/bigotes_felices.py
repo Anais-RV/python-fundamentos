@@ -16,6 +16,7 @@ try:
     # Variable datos a mostrar mensaje de los datos introducidos por el usuario
     datos = f"Gato: {nombre_gato} (edad: {edad_gato})"
 
+    # Imprimir mensaje de salida
     print(datos)
 
 except ValueError:
