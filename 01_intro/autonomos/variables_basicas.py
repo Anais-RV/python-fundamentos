@@ -1,10 +1,10 @@
 # Programa que combine nombre y ciudad en un string: 'Ana vive en Lima'
 
 # Variable nombre
-nombre = "David"
+nombre = "Ana"
 
 # Variable ciudad
-ciudad = "Asturias"
+ciudad = "Lima"
 
 # Variable mensaje que combina 'nombre' y 'ciudad' en un string
 mensaje = f"{nombre} vive en {ciudad}"
