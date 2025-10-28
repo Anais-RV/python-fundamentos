@@ -1,3 +1,5 @@
+# Programa que imprima tres líneas con información personal
+
 # Imprimir primera línea de dato personal
 print("Nombre: David")
 # Imprimir segunda línea de dato personal
