@@ -17,10 +17,13 @@ try:
 except ValueError:
     print("Edad inválida")
 
-# Primer test: imprimir datos introducidos de tipo string. Completado ✅
+# Primer test: imprimir datos introducidos de tipo string.
+# Prueba: 
+# Nombre del gato --> pepe
+# Edad del gato --> viyuela
+# Mensaje mostrado: Gato: pepe (edad: viyuela) ✅
 # Segundo test: imprimir datos de nombre_gato (string: cadena de texto) y de edad_gato (int: numero entero)
 # Prueba: 
 # Nombre del gato --> pepe
 # Edad del gato --> julio
-# Error ❌
-# Mensaje enviado: Edad inválida
+# Mensaje enviado: Edad inválida ❌
