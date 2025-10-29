@@ -8,9 +8,14 @@
 a = 10
 b = 3
 
+# OPERACIONES NUMÉRICAS
+# Suma
 suma = a + b
+# Resta
 resta = a - b
+# Multiplicación
 multiplicacion = a * b
+# División
 division = a / b
 
 division = round(division, 2)
