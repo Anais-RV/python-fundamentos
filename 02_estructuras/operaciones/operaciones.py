@@ -12,6 +12,8 @@ resta = a - b
 multiplicacion = a * b
 division = a / b
 
+division = round(division, 2)
+
 print(f"Valor de a: {a}")
 print(f"Valor de b: {b}")
 print("---------------------------")
