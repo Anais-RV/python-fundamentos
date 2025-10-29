@@ -4,7 +4,7 @@
 # Paso 3: Imprime los resultados con f-strings.
 # Paso 4: Redondea la división a 2 decimales.
 
-
+# Variables a y b
 a = 10
 b = 3
 
