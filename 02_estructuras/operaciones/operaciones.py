@@ -14,5 +14,5 @@ division = a / b
 
 print(f"Valor de a: {a}")
 print(f"Valor de b: {b}")
-print(f"Suma de a y b: {suma}")
-print(f"Resta de a y b: {resta}")
+print(f"Suma: {a} + {b} = {suma}")
+print(f"Resta: {a} - {b} = {resta}")
