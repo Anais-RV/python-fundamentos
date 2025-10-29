@@ -18,6 +18,8 @@ multiplicacion = a * b
 # División
 division = a / b
 
+# Función round() para redondear la division a 2 decimales
+# Sintaxis: round('numero float', 'numero decimales a redondear')
 division = round(division, 2)
 
 print(f"Valor de a: {a}")
