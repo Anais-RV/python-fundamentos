@@ -3,6 +3,7 @@
 # Paso 2: Convierte a `int` dentro de `try/except`.
 # Paso 3: Si falla, imprime `Entrada inválida`.
 
+# Variable casting que pide un número con `input`
 casting = input("Introduce un número --> ")
 
 try:
