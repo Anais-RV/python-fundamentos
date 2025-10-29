@@ -1,4 +1,4 @@
-# EJERCICIO GUIADO 1: OPREACIONES NUMÉRICAS
+# EJERCICIO GUIADO 1: OPERACIONES NUMÉRICAS
 # Paso 1: Crea `operaciones.py` y define `a=10`, `b=3`.
 # Paso 2: Calcula suma, resta, multiplicación y división.
 # Paso 3: Imprime los resultados con f-strings.
