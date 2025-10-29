@@ -15,5 +15,5 @@ except ValueError:
     # Salta mensaje de error 'ValueError' si el resultado no es un número entero
     print(f"Entrada inválida")
 
-# Tercer test: introducir python cuando lo pidan 
-# Resultado impresión: Entrada inválida ✅
+# Cuarto test: introducir 35 cuando lo pidan 
+# Resultado impresión: 35 ✅
