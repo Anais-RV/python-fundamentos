@@ -6,3 +6,5 @@
 casting = input("Introduce un número --> ")
 
 casting = int(casting)
+
+print(casting)
