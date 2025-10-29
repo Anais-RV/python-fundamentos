@@ -4,3 +4,5 @@
 # Paso 3: Si falla, imprime `Entrada inválida`.
 
 casting = input("Introduce un número --> ")
+
+casting = int(casting)
