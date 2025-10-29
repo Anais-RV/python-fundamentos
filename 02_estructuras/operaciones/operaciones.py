@@ -13,3 +13,4 @@ multiplicacion = a * b
 division = a / b
 
 print(f"Valor de a: {a}")
+print(f"Valor de b: {b}")
