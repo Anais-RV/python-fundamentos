@@ -11,5 +11,5 @@ try:
 except ValueError:
     print(f"Entrada inválida")
 
-# Segundo test: introducir python cuando lo pidan --> Sale error ❌
-# Motivo: ValueError: invalid literal for int() with base 10: 'python'
+# Tercer test: introducir python cuando lo pidan 
+# Resultado impresión: Entrada inválida ✅
