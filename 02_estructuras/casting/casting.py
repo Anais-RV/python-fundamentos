@@ -9,4 +9,5 @@ casting = int(casting)
 
 print(casting)
 
-# Primer test: introducir 34 --> sale éxito ✅
+# Segundo test: introducir python cuando lo pidan --> Sale error ❌
+# Motivo: ValueError: invalid literal for int() with base 10: 'python'
