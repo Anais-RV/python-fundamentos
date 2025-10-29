@@ -8,3 +8,5 @@ casting = input("Introduce un número --> ")
 casting = int(casting)
 
 print(casting)
+
+# Primer test: introducir 34 --> sale éxito ✅
