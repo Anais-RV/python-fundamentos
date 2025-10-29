@@ -22,6 +22,7 @@ division = a / b
 # Sintaxis: round('numero float', 'numero decimales a redondear')
 division = round(division, 2)
 
+# Impresión de resultados con f-strings
 print(f"Valor de a: {a}")
 print(f"Valor de b: {b}")
 print("---------------------------")
