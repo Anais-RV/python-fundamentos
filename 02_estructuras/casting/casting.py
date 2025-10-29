@@ -9,6 +9,7 @@ casting = input("Introduce un número --> ")
 try:
     # Intentamos convertir casting en int
     casting = int(casting)
+    # Si lo convierte, imprime en consola
     print(casting)
 except ValueError:
     print(f"Entrada inválida")
