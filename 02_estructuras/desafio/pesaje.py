@@ -11,3 +11,9 @@ gato2 = int(gato2)
 gato3 = int(gato3)
 
 promedio = (gato1 + gato2 + gato3) / 3
+
+print(f"Pesaje de los gatos: ")
+print(f"Gato nº1: {gato1} kg")
+print(f"Gato nº2: {gato2} kg")
+print(f"Gato nº3: {gato3} kg")
+print(f"Calculo promedio de los 3 gatos: {promedio}")
