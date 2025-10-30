@@ -2,3 +2,5 @@
 # Enunciado: redondea 3.14159 a 3 decimales.
 
 num = 3.14159
+
+num_redondo = round(num, 3)
