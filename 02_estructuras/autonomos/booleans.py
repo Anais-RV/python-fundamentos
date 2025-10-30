@@ -36,7 +36,9 @@ try :
 except ValueError:
     print("Inválido. Inténtelo de nuevo.")
 
-# Segundo test: introducir 're' como num1 y 'do' como num2. 
+# Tercer test: introducir 're' como num1 y 'do' como num2. 
 # Resultado:
-# ERROR ❌
-# Motivo: ValueError: invalid literal for int() with base 10: 're'
+# Escribe un número: re
+# Escribe otro número: do
+# Inválido. Inténtelo de nuevo.
+# Éxito ✅
