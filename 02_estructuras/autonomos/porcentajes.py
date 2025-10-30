@@ -6,7 +6,7 @@ num = input("Introduce un número: ")
 
 # Efecto try/except por si deja convertir la variable num a entero
 try: 
-
+    # Convertir string num a int num
     num = int(num)
 
     porcentaje = 0.15
