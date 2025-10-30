@@ -17,6 +17,7 @@ string = f"{nombre} {apellido}"
 # Como un encabezado o un título.
 title = string.title()
 
+# Imprimir variable title en consola
 print(title)
 
 # Primer test: ejecutamos 'python strings.py'
