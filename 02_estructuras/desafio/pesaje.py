@@ -9,3 +9,5 @@ gato3 = input("Introduce el peso del tercer gato: ")
 gato1 = int(gato1)
 gato2 = int(gato2)
 gato3 = int(gato3)
+
+promedio = (gato1 + gato2 + gato3) / 3
