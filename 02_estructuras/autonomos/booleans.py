@@ -24,7 +24,7 @@ menorque = num1 < num2
 
 # Imprimir las condiciones simples en consola
 print(f"CONDICIONES SIMPLES:")
-print(f"{num1} >= {num2} : {num1 + num2}")
+print(f"{num1} >= {num2} : {mayorigualque}")
 print(f"{num1} <= {num2} : {menorigualque}")
 print(f"{num1} == {num2} : {igualque}")
 print(f"{num1} != {num2} : {distintoque}")
@@ -40,3 +40,4 @@ print(f"{num1} < {num2} : {menorque}")
 # 4 != 6 : True
 # 4 > 6 : False
 # 4 < 6 : True
+# Éxito ✅
