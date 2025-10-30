@@ -3,3 +3,5 @@
 
 nombre = input("Escribe tu nombre: ")
 apellido = input("Escribe tu apellido:")
+
+string = f"{nombre} {apellido}"
