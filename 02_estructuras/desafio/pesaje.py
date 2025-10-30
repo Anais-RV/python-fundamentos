@@ -2,8 +2,11 @@
 # Enunciado: Pide el peso de tres gatos y calcula el promedio.
 # Valida entradas numéricas. 
 
+# Variable gato1 al pedir al usuario el peso del 1º gato
 gato1 = input("Introduce el peso del primer gato: ")
+# Variable gato2 al pedir al usuario el peso del 2º gato
 gato2 = input("Introduce el peso del segundo gato: ")
+# Variable gato3 al pedir al usuario el peso del 3º gato
 gato3 = input("Introduce el peso del tercer gato: ")
 
 try: 
