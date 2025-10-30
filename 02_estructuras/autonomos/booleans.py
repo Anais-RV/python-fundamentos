@@ -9,3 +9,4 @@ menorigualque = num1 <= num2
 igualque = num1 == num2
 distintoque = num1 != num2
 mayorque = num1 > num2
+menorque = num1 < num2
