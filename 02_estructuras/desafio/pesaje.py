@@ -18,6 +18,7 @@ try:
     # Intentamos convertir gato3 en número entero
     gato3 = int(gato3)
 
+    # Variable promedio para calcular el peso promedio de los 3 gatos
     promedio = (gato1 + gato2 + gato3) / 3
 
     print(f"Pesaje de los gatos: ")
