@@ -15,9 +15,10 @@ try:
 except ValueError:
     print("Valor incorrecto. Por favor reinicie el programa.")
 
-# Segundo test: introducir 'Hola' como num cuando lo pide el programa
+# Tercer test: introducir 'Hola' como num cuando lo pide el programa
 # Resultado al ejecutar 'python porcentajes.py':
 # --------------------------
-# ERROR ❌
+# Introduce un número: Hola
+# Valor incorrecto. Por favor reinicie el programa.
 # --------------------------
-# Motivo: ValueError: invalid literal for int() with base 10: 'Hola'
+# Éxito ✅
