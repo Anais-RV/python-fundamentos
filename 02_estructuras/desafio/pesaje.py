@@ -32,7 +32,9 @@ try:
     # Imprimir peso promedio de los 3 gatos
     print(f"Calculo promedio de los 3 gatos: {promedio}")
 
+# Metodo except por si el dato introducido no es un número entero
 except ValueError:
+    # Si uno de los 3 valores pedidos no es un número entero mostrará este mensaje de error
     print(f"Error al introducir los datos. Por favor, vuelva a iniciar el pesaje.")
 
 # Tercer test: introducir 'hola', 'que' y 'cachopo' respectivamente cuando le pida el programa
