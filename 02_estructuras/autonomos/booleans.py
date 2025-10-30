@@ -14,3 +14,4 @@ menorque = num1 < num2
 print(f"CONDICIONES SIMPLES:")
 print(f"{num1} >= {num2} : {mayorigualque}")
 print(f"{num1} <= {num2} : {menorigualque}")
+print(f"{num1} == {num2} : {igualque}")
