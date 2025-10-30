@@ -22,10 +22,10 @@ except ValueError:
     # Si el valor introducido no es un número entero envía este error
     print("Valor incorrecto. Por favor reinicie el programa.")
 
-# Tercer test: introducir 'Hola' como num cuando lo pide el programa
+# Cuarto test: introducir '100' como num cuando lo pide el programa
 # Resultado al ejecutar 'python porcentajes.py':
 # --------------------------
-# Introduce un número: Hola
-# Valor incorrecto. Por favor reinicie el programa.
+# Introduce un número: 100
+# 15% de 100 --> 15.0
 # --------------------------
 # Éxito ✅
