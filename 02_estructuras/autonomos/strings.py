@@ -7,3 +7,5 @@ apellido = input("Escribe tu apellido: ")
 string = f"{nombre} {apellido}"
 
 title = string.title()
+
+print(title)
