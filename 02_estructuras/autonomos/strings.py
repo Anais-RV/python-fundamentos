@@ -11,6 +11,10 @@ apellido = input("Escribe tu apellido: ")
 # string: devuelve una cadena de texto que une nombre y apellido con un espacio
 string = f"{nombre} {apellido}"
 
+# Variable title
+# title: devuelve string que incluye la funcion title()
+# title(): devuelve una cadena en la que el primer carácter de cada palabra está en mayúscula. 
+# Como un encabezado o un título.
 title = string.title()
 
 print(title)
