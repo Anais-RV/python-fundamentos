@@ -2,3 +2,5 @@
 # Enunciado: calcula el 15% de una cantidad.
 
 num = input("Introduce un número: ")
+
+num = int(num)
