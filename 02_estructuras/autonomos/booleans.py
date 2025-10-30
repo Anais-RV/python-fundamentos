@@ -12,3 +12,4 @@ mayorque = num1 > num2
 menorque = num1 < num2
 
 print(f"CONDICIONES SIMPLES:")
+print(f"{num1} >= {num2} : {mayorigualque}")
