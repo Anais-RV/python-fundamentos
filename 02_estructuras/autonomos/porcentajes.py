@@ -8,3 +8,5 @@ num = int(num)
 porcentaje = 0.15
 
 resultado = num * porcentaje
+
+print(f"15% de {num} --> {resultado}")
