@@ -4,7 +4,9 @@
 # Variable num al pedir un número entero
 num = input("Introduce un número: ")
 
+# Efecto try/except por si deja convertir la variable num a entero
 try: 
+
     num = int(num)
 
     porcentaje = 0.15
