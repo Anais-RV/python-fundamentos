@@ -6,7 +6,7 @@ num1 = input("Escribe un número: ")
 num2 = input("Escribe otro número: ")
 
 try :
-
+    # Intentamos convertir num1 y num2 en enteros
     num1 = int(num1)
     num2 = int(num2)
 
@@ -34,6 +34,7 @@ try :
     print(f"{num1} < {num2} : {menorque}")
 
 except ValueError:
+    # Si algun valor introducido no es un numero imprime este error.
     print("Inválido. Inténtelo de nuevo.")
 
 # Cuarto test: introducir '10' como num1 y '5' como num2. 
