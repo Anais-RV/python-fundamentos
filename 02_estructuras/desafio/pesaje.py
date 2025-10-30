@@ -11,8 +11,11 @@ gato3 = input("Introduce el peso del tercer gato: ")
 
 # Try/except para verificar si los datos introducidos son números enteros
 try: 
+    # Intentamos convertir gato1 en número entero
     gato1 = int(gato1)
+    # Intentamos convertir gato2 en número entero
     gato2 = int(gato2)
+    # Intentamos convertir gato3 en número entero
     gato3 = int(gato3)
 
     promedio = (gato1 + gato2 + gato3) / 3
