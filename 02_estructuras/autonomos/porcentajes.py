@@ -19,6 +19,7 @@ try:
     print(f"15% de {num} --> {resultado}")
 
 except ValueError:
+    # Si el valor introducido no es un número entero envía este error
     print("Valor incorrecto. Por favor reinicie el programa.")
 
 # Tercer test: introducir 'Hola' como num cuando lo pide el programa
