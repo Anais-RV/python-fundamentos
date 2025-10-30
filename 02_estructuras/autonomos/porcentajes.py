@@ -1,6 +1,7 @@
 # EJERCICIO AUTÓNOMO 4: PORCENTAJES
 # Enunciado: calcula el 15% de una cantidad.
 
+# Variable num al pedir un número entero
 num = input("Introduce un número: ")
 
 try: 
