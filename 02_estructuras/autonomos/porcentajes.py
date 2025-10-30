@@ -15,6 +15,7 @@ try:
     # Variable resultado para calcular el resultado del 15% del numero dado
     resultado = num * porcentaje
 
+    # Imprimir resultado del ejercicio
     print(f"15% de {num} --> {resultado}")
 
 except ValueError:
