@@ -1,6 +1,7 @@
 # EJERCICIO AUTÓNOMO 3: REDONDEO
 # Enunciado: redondea 3.14159 a 3 decimales.
 
+# Variable num con el número específico a redondear
 num = 3.14159
 
 num_redondo = round(num, 3)
