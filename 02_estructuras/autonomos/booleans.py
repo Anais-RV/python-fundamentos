@@ -5,11 +5,18 @@
 num1 = 4
 num2 = 6
 
+# Declaramos variables de las condiciones simples:
+# Condición si el primer número es Mayor o igual que el segundo número
 mayorigualque = num1 >= num2
+# Condición si el primer número es Menor o igual que el segundo número
 menorigualque = num1 <= num2
+# Condición si el primer número es Igual que el segundo número
 igualque = num1 == num2
+# Condición si el primer número es Distinto que el segundo número
 distintoque = num1 != num2
+# Condición si el primer número es Mayor que el segundo número
 mayorque = num1 > num2
+# Condición si el primer número es Menor que el segundo número
 menorque = num1 < num2
 
 print(f"CONDICIONES SIMPLES:")
