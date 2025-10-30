@@ -33,7 +33,7 @@ try:
     # Imprimir peso del gato nº3
     print(f"Gato nº3: {gato3} kg")
     # Imprimir peso promedio de los 3 gatos
-    print(f"Calculo promedio de los 3 gatos: {promedio}")
+    print(f"Calculo promedio de los 3 gatos: {promedio} kg")
 
 # Metodo except por si el dato introducido no es un número entero
 except ValueError:
