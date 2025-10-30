@@ -18,3 +18,12 @@ print(f"{num1} == {num2} : {igualque}")
 print(f"{num1} != {num2} : {distintoque}")
 print(f"{num1} > {num2} : {mayorque}")
 print(f"{num1} < {num2} : {menorque}")
+
+# RESULTADO ESPERADO con comando 'python booleans.py':
+# CONDICIONES SIMPLES:
+# 4 >= 6 : False
+# 4 <= 6 : True
+# 4 == 6 : False
+# 4 != 6 : True
+# 4 > 6 : False
+# 4 < 6 : True
