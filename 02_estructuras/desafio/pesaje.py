@@ -21,6 +21,9 @@ try:
     # Variable promedio para calcular el peso promedio de los 3 gatos
     promedio = (gato1 + gato2 + gato3) / 3
 
+    
+    promedio = round(promedio, 3)
+
     # Imprimir titulo del pesaje de los gatos
     print(f"Pesaje de los gatos: ")
     # Imprimir peso del gato nº1
