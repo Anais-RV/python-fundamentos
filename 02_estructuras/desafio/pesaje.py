@@ -22,16 +22,12 @@ try:
 except ValueError:
     print(f"Error al introducir los datos. Por favor, vuelva a iniciar el pesaje.")
 
-# Segundo test: introducir 'hola', 'que' y 'cachopo' respectivamente cuando le pida el programa
+# Tercer test: introducir 'hola', 'que' y 'cachopo' respectivamente cuando le pida el programa
 # Resultado al ejecutar 'python pesaje.py':
 # ---------------------------------------
 # Introduce el peso del primer gato: hola
 # Introduce el peso del segundo gato: que 
 # Introduce el peso del tercer gato: cachopo
-# Traceback (most recent call last):
-#   File "C:\Users\Propietario\Documents\Archivos\Repositorios\python-fundamentos\02_estructuras\desafio\pesaje.py", line 9, in <module>
-#     gato1 = int(gato1)
-# ValueError: invalid literal for int() with base 10: 'hola'
+# Error al introducir los datos. Por favor, vuelva a iniciar el pesaje.
 # ---------------------------------------
-# ERROR ❌
-# Motivo: ValueError 
+# Éxito ✅ 
