@@ -19,6 +19,7 @@ mayorque = num1 > num2
 # Condición si el primer número es Menor que el segundo número
 menorque = num1 < num2
 
+# Imprimir las condiciones simples en consola
 print(f"CONDICIONES SIMPLES:")
 print(f"{num1} >= {num2} : {mayorigualque}")
 print(f"{num1} <= {num2} : {menorigualque}")
