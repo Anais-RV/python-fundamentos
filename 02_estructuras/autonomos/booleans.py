@@ -5,3 +5,4 @@ num1 = 4
 num2 = 6
 
 mayorigualque = num1 >= num2
+menorigualque = num1 <= num2
