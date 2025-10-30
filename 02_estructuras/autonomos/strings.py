@@ -9,3 +9,13 @@ string = f"{nombre} {apellido}"
 title = string.title()
 
 print(title)
+
+# Primer test: ejecutamos 'python strings.py'
+# Cuando pida el programa pondremos 
+# como nombre 'pepe' 
+# y como apellido 'viyuela'
+# Resultado esperado:
+# Escribe tu nombre: pepe
+# Escribe tu apellido: viyuela
+# Pepe Viyuela
+# Realizado con éxito ✅
