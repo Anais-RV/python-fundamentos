@@ -6,3 +6,4 @@ num2 = 6
 
 mayorigualque = num1 >= num2
 menorigualque = num1 <= num2
+igualque = num1 == num2
