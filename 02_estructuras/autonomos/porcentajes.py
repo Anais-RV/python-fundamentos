@@ -4,3 +4,5 @@
 num = input("Introduce un número: ")
 
 num = int(num)
+
+porcentaje = 0.15
