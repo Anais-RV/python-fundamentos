@@ -7,6 +7,8 @@
 nombre = input("Escribe tu nombre: ")
 apellido = input("Escribe tu apellido: ")
 
+# Variable string
+# string: devuelve una cadena de texto que une nombre y apellido con un espacio
 string = f"{nombre} {apellido}"
 
 title = string.title()
