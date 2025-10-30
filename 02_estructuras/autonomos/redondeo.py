@@ -13,6 +13,7 @@ num = 3.14159
 #            number. Por defecto es 0.
 num_redondo = round(num, 3)
 
+# Imprimir resultado del ejercicio
 print(f"Número: {num}")
 print(f"Número redondeado a 3 decimales: {num_redondo}")
 
