@@ -36,9 +36,12 @@ try :
 except ValueError:
     print("Inválido. Inténtelo de nuevo.")
 
-# Tercer test: introducir 're' como num1 y 'do' como num2. 
+# Cuarto test: introducir '10' como num1 y '5' como num2. 
 # Resultado:
-# Escribe un número: re
-# Escribe otro número: do
-# Inválido. Inténtelo de nuevo.
+# 10 >= 5 : True
+# 10 <= 5 : False
+# 10 == 5 : False
+# 10 != 5 : True
+# 10 > 5 : True
+# 10 < 5 : False
 # Éxito ✅
