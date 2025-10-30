@@ -12,6 +12,7 @@ try:
     # Variable porcentaje a calcular el 15% del numero dado
     porcentaje = 0.15
 
+    # Variable resultado para calcular el resultado del 15% del numero dado
     resultado = num * porcentaje
 
     print(f"15% de {num} --> {resultado}")
