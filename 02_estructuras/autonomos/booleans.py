@@ -31,13 +31,7 @@ print(f"{num1} != {num2} : {distintoque}")
 print(f"{num1} > {num2} : {mayorque}")
 print(f"{num1} < {num2} : {menorque}")
 
-# Primer test: introducir '4' como num1 y '6' como num2. 
+# Segundo test: introducir 're' como num1 y 'do' como num2. 
 # Resultado:
-# CONDICIONES SIMPLES:
-# 4 >= 6 : False
-# 4 <= 6 : True
-# 4 == 6 : False
-# 4 != 6 : True
-# 4 > 6 : False
-# 4 < 6 : True
-# Éxito ✅
+# ERROR ❌
+# Motivo: ValueError: invalid literal for int() with base 10: 're'
