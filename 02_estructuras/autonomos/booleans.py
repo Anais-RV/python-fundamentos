@@ -1,9 +1,9 @@
 # EJERCICIO AUTÓNOMO 1: BOOLEANS
 # Enunciado: evalúa condiciones simples (>=, ==) y muestra True/False.
 
-# Variables de dos números enteros
-num1 = 4
-num2 = 6
+# Variables de dos números enteros que piden al usuario
+num1 = input("Escribe un número: ")
+num2 = input("Escribe otro número: ")
 
 # Declaramos variables de las condiciones simples:
 # Condición si el primer número es Mayor o igual que el segundo número
