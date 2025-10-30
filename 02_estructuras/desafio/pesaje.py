@@ -50,6 +50,6 @@ except ValueError:
 # Gato nº1: 12 kg
 # Gato nº2: 34 kg
 # Gato nº3: 40 kg
-# Calculo promedio de los 3 gatos: 28.667
+# Calculo promedio de los 3 gatos: 28.667 kg
 # ---------------------------------------
 # Éxito ✅ 
