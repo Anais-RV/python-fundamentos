@@ -3,13 +3,17 @@
 
 num = input("Introduce un número: ")
 
-num = int(num)
+try: 
+    num = int(num)
 
-porcentaje = 0.15
+    porcentaje = 0.15
 
-resultado = num * porcentaje
+    resultado = num * porcentaje
 
-print(f"15% de {num} --> {resultado}")
+    print(f"15% de {num} --> {resultado}")
+
+except ValueError:
+    print("Valor incorrecto. Por favor reinicie el programa.")
 
 # Segundo test: introducir 'Hola' como num cuando lo pide el programa
 # Resultado al ejecutar 'python porcentajes.py':
