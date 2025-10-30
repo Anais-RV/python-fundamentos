@@ -5,3 +5,7 @@
 gato1 = input("Introduce el peso del primer gato: ")
 gato2 = input("Introduce el peso del segundo gato: ")
 gato3 = input("Introduce el peso del tercer gato: ")
+
+gato1 = int(gato1)
+gato2 = int(gato2)
+gato3 = int(gato3)
