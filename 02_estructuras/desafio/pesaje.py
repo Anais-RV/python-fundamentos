@@ -21,10 +21,15 @@ try:
     # Variable promedio para calcular el peso promedio de los 3 gatos
     promedio = (gato1 + gato2 + gato3) / 3
 
+    # Imprimir titulo del pesaje de los gatos
     print(f"Pesaje de los gatos: ")
+    # Imprimir peso del gato nº1
     print(f"Gato nº1: {gato1} kg")
+    # Imprimir peso del gato nº2
     print(f"Gato nº2: {gato2} kg")
+    # Imprimir peso del gato nº3
     print(f"Gato nº3: {gato3} kg")
+    # Imprimir peso promedio de los 3 gatos
     print(f"Calculo promedio de los 3 gatos: {promedio}")
 
 except ValueError:
