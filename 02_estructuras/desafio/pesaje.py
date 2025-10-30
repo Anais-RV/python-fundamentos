@@ -9,6 +9,7 @@ gato2 = input("Introduce el peso del segundo gato: ")
 # Variable gato3 al pedir al usuario el peso del 3º gato
 gato3 = input("Introduce el peso del tercer gato: ")
 
+# Try/except para verificar si los datos introducidos son números enteros
 try: 
     gato1 = int(gato1)
     gato2 = int(gato2)
