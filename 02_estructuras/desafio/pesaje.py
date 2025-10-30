@@ -40,7 +40,7 @@ except ValueError:
     # Si uno de los 3 valores pedidos no es un número entero mostrará este mensaje de error
     print(f"Error al introducir los datos. Por favor, vuelva a iniciar el pesaje.")
 
-# Cuarto test: introducir '12', '34' y '40' respectivamente cuando le pida el programa
+# Quinto test: introducir '12', '34' y '40' respectivamente cuando le pida el programa
 # Resultado al ejecutar 'python pesaje.py':
 # ---------------------------------------
 # Introduce el peso del primer gato: 12
@@ -50,6 +50,6 @@ except ValueError:
 # Gato nº1: 12 kg
 # Gato nº2: 34 kg
 # Gato nº3: 40 kg
-# Calculo promedio de los 3 gatos: 28.666666666666668
+# Calculo promedio de los 3 gatos: 28.667
 # ---------------------------------------
-# Éxito, pero le falta redondear promedio a 3 decimales✅ 
+# Éxito ✅ 
