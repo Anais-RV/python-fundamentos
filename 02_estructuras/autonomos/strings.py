@@ -1,6 +1,9 @@
 # EJERCICIO AUTÓNOMO 2: STRINGS
 # Enunciado: une nombre y apellido con espacio y `title()`.
 
+# Variables nombre y apellido
+# nombre: pide al usuario un nombre
+# apellido: pide al usuario un apellido
 nombre = input("Escribe tu nombre: ")
 apellido = input("Escribe tu apellido: ")
 
