@@ -9,6 +9,7 @@ try:
     # Convertir string num a int num
     num = int(num)
 
+    # Variable porcentaje a calcular el 15% del numero dado
     porcentaje = 0.15
 
     resultado = num * porcentaje
