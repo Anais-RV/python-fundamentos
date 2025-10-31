@@ -2,6 +2,16 @@
 
 Tiempo estimado: 2–3h
 
+---
+
+## 🎯 Ejercicio guiado: La Calculadora que Crece (v1)
+
+Ejercicio progresivo que evoluciona en cada módulo. En esta versión: calculadora básica con suma.
+
+👉 **[Ver guía completa: ejercicio_guiado/GUIA.md](./ejercicio_guiado/GUIA.md)**
+
+---
+
 ## Guiado 1: Tu primer script
 Objetivo: imprimir un saludo y una variable.
 
