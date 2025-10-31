@@ -47,3 +47,11 @@ print(f"{num_float1} + {num_float2} = {resultado}")
 # - 5 y 3 → debe dar 8
 # - -2 y 7 → debe dar 5
 # - 3.5 y 2.5 → debe dar 6.0
+#
+# Prueba:
+# Comando a ejecutar: 'python calculadora_v1.py'
+# Resultado:
+# Ingrese un número: 4
+# Ingrese otro número: 9
+# 4.0 + 9.0 = 13.0
+# Éxito ✅ 
