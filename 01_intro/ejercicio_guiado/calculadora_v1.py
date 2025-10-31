@@ -25,7 +25,7 @@ primer_numero = input("Ingrese un número: ")
 
 # TODO 2: Pide el segundo número al usuario
 # segundo_numero = ...
-
+segundo_numero = input("Ingrese otro número: ")
 
 # TODO 3: Convierte los strings a números decimales
 # Pista: usa float() para permitir decimales (ej: 3.5)
