@@ -36,7 +36,7 @@ num_float2 = float(segundo_numero)
 
 # TODO 4: Realiza la suma
 # resultado = ...
-
+resultado = num_float1 + num_float2
 
 # TODO 5: Muestra el resultado
 # Pista: print("El resultado es:", resultado)
