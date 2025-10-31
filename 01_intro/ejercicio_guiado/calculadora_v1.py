@@ -40,7 +40,7 @@ resultado = num_float1 + num_float2
 
 # TODO 5: Muestra el resultado
 # Pista: print("El resultado es:", resultado)
-
+print(f"{num_float1} + {num_float2} = {resultado}")
 
 # ¡Ya está! Ejecuta el programa y prueba con diferentes números
 # Ejemplos para probar:
