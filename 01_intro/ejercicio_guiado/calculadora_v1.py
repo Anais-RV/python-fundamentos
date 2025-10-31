@@ -31,7 +31,8 @@ segundo_numero = input("Ingrese otro número: ")
 # Pista: usa float() para permitir decimales (ej: 3.5)
 # num1 = float(primer_numero)
 # num2 = ...
-
+num_float1 = float(primer_numero)
+num_float2 = float(segundo_numero)
 
 # TODO 4: Realiza la suma
 # resultado = ...
