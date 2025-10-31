@@ -21,7 +21,7 @@ Instrucciones:
 # TODO 1: Pide el primer número al usuario
 # Pista: usa input() y guarda el valor en una variable
 # primer_numero = ...
-
+primer_numero = input("Ingrese un número: ")
 
 # TODO 2: Pide el segundo número al usuario
 # segundo_numero = ...
