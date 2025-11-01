@@ -7,4 +7,4 @@ def sumar(nums):
     return total
 
 if __name__ == "__main__":
-    print(sumar([1, 2, 3]))
+    print(sumar([1, 2, 3, 4]))
