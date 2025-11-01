@@ -1,9 +1,9 @@
 txt = input("Número: ")
 try:
-    n = int(txt)
-    if n > 0:
+    x = int(txt)
+    if x > 0:
         print("positivo")
-    elif n == 0:
+    elif x == 0:
         print("cero")
     else:
         print("negativo")
