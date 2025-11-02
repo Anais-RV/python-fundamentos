@@ -21,48 +21,59 @@ Instrucciones:
 # TODO 1: Pide el primer número al usuario y conviértelo a float
 # num1 = ...
 num1 = input("Introduce el primer número --> ")
-float_num1 = float(num1)
 
 # TODO 2: Pide el segundo número al usuario y conviértelo a float
 # num2 = ...
 num2 = input("Introduce el segundo número --> ")
-float_num2 = float(num2)
 
 # TODO 3: Pregunta qué operación desea realizar
 # Pista: input("¿Qué operación deseas realizar? (+, -, *, /): ")
 # operacion = ...
 operacion = input("¿Qué operación desea realizar? (+, -, *, /) --> ")
 
-# TODO 4: Realiza la operación correspondiente usando if/elif/else
-# Pista: Compara la variable 'operacion' con "+", "-", "*", "/"
-#
-# if operacion == "+":
-#     resultado = num1 + num2
-# elif operacion == "-":
-#     ...
-# elif operacion == "*":
-#     ...
-# elif operacion == "/":
-#     ...
-# else:
-#     print("❌ Operación no válida")
-if operacion == "+":
-    resultado = float_num1 + float_num2
-elif operacion == "-":
-    resultado = float_num1 - float_num2
-elif operacion == "*":
-    resultado = float_num1 * float_num2 
-elif operacion == "/":
-    resultado = float_num1 / float_num2
-else:
-    print("❌ Lo siento. No se reconoce la operación que ha introducido. Vuelva a intentarlo.")
+# TODO 3.5: Realiza try/except por si surge error al introducir números dados
+try:
+    float_num1 = float(num1)
+    float_num2 = float(num2)
+
+    # TODO 4: Realiza la operación correspondiente usando if/elif/else
+    # Pista: Compara la variable 'operacion' con "+", "-", "*", "/"
+    #
+    # if operacion == "+":
+    #     resultado = num1 + num2
+    # elif operacion == "-":
+    #     ...
+    # elif operacion == "*":
+    #     ...
+    # elif operacion == "/":
+    #     ...
+    # else:
+    #     print("❌ Operación no válida")
+    if operacion == "+":
+        resultado = float_num1 + float_num2
+    elif operacion == "-":
+        resultado = float_num1 - float_num2
+    elif operacion == "*":
+        resultado = float_num1 * float_num2 
+    elif operacion == "/":
+        resultado = float_num1 / float_num2
+    else:
+        print("❌ Lo siento. No se reconoce la operación que ha introducido. Vuelva a intentarlo.")
 
 
-# TODO 5: Muestra el resultado usando f-strings
-# Pista: f"El resultado de {num1} {operacion} {num2} = {resultado:.2f}"
-# El :.2f muestra solo 2 decimales
-# print(f"...")
-print(f"{float_num1} {operacion} {float_num2} = {round(resultado, 2)}")
+    # TODO 5: Muestra el resultado usando f-strings
+    # Pista: f"El resultado de {num1} {operacion} {num2} = {resultado:.2f}"
+    # El :.2f muestra solo 2 decimales
+    # print(f"...")
+    print(f"{float_num1} {operacion} {float_num2} = {round(resultado, 2)}")
+
+# Añadir dos mensajes de error
+except ValueError:
+    print(f"❌ Inválido. Uno de los números introducidos (num1: {num1} | num2: {num2}) es incorrecto.")
+    print(f"Por favor, reinicie el programa. 🛠️")
+except NameError:
+    print(f"❌ No ha generado el resultado que esperaba.")
+    print(f"Por favor, reinicie el programa. 🛠️")
 
 
 # ¡Perfecto! Ahora tu calculadora puede hacer las 4 operaciones básicas
