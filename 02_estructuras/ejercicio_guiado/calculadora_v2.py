@@ -128,3 +128,13 @@ except NameError:
 # Introduce el primer número --> hola
 # ERROR ❌
 # Motivo: ValueError: could not convert string to float: 'hola'
+# --------------------------------------------------
+# Tercer test: al agregar try/except, volver a ingresar 'hola' por si surge el mensaje.
+# --------------------------------------------------
+# Introduce el primer número --> hola
+# Introduce el segundo número --> 3
+# ¿Qué operación desea realizar? (+, -, *, /) --> +
+# ❌ Inválido. Uno de los números introducidos (num1: hola | num2: 3) es incorrecto.
+# Por favor, reinicie el programa. 🛠️
+# --------------------------------------------------
+# Mensaje mostrado con éxito ✅
