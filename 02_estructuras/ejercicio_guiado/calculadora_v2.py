@@ -31,7 +31,7 @@ float_num2 = float(num2)
 # TODO 3: Pregunta qué operación desea realizar
 # Pista: input("¿Qué operación deseas realizar? (+, -, *, /): ")
 # operacion = ...
-
+operacion = input("¿Qué operación desea realizar? (+, -, *, /) --> ")
 
 # TODO 4: Realiza la operación correspondiente usando if/elif/else
 # Pista: Compara la variable 'operacion' con "+", "-", "*", "/"
