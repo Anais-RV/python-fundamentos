@@ -46,6 +46,16 @@ operacion = input("¿Qué operación desea realizar? (+, -, *, /) --> ")
 #     ...
 # else:
 #     print("❌ Operación no válida")
+if operacion == "+":
+    resultado = float_num1 + float_num2
+elif operacion == "-":
+    resultado = float_num1 - float_num2
+elif operacion == "*":
+    resultado = float_num1 * float_num2 
+elif operacion == "/":
+    resultado = float_num1 / float_num2
+else:
+    print("❌ Lo siento. No se reconoce la operación que ha introducido. Vuelva a intentarlo.")
 
 
 # TODO 5: Muestra el resultado usando f-strings
