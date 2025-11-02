@@ -62,6 +62,7 @@ else:
 # Pista: f"El resultado de {num1} {operacion} {num2} = {resultado:.2f}"
 # El :.2f muestra solo 2 decimales
 # print(f"...")
+print(f"{float_num1} {operacion} {float_num2} = {round(resultado, 2)}")
 
 
 # ¡Perfecto! Ahora tu calculadora puede hacer las 4 operaciones básicas
