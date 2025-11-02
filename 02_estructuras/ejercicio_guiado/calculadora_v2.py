@@ -77,3 +77,36 @@ print(f"{float_num1} {operacion} {float_num2} = {round(resultado, 2)}")
 # 💡 Nota: Si intentas dividir por cero (10 / 0), Python mostrará un error.
 #    Esto lo arreglaremos en la v3 con validación de entrada.
 
+# Primer test: introducir 5 como num1, 3 como num2 y cualquier signo sugerido en operador
+# --------------------------------------------------
+# Operador '+':
+# Introduce el primer número --> 5
+# Introduce el segundo número --> 3
+# ¿Qué operación desea realizar? (+, -, *, /) --> +
+# 5.0 + 3.0 = 8.0
+# --------------------------------------------------
+# Operador '-':
+# Introduce el primer número --> 5
+# Introduce el segundo número --> 3
+# ¿Qué operación desea realizar? (+, -, *, /) --> -
+# 5.0 - 3.0 = 2.0 
+# --------------------------------------------------
+# Operador '*':
+# Introduce el primer número --> 5
+# Introduce el segundo número --> 3
+# ¿Qué operación desea realizar? (+, -, *, /) --> *
+# 5.0 * 3.0 = 15.0
+# --------------------------------------------------
+# Operador '/':
+# Introduce el primer número --> 5
+# Introduce el segundo número --> 3
+# ¿Qué operación desea realizar? (+, -, *, /) --> /
+# 5.0 / 3.0 = 1.67  
+# --------------------------------------------------
+# Cualquier otro operador '%, (, )...':
+# Introduce el primer número --> 5
+# Introduce el segundo número --> 3
+# ¿Qué operación desea realizar? (+, -, *, /) --> %
+# ❌ Lo siento. No se reconoce la operación que ha introducido. Vuelva a intentarlo.
+# --------------------------------------------------
+# Éxito ✅ 
