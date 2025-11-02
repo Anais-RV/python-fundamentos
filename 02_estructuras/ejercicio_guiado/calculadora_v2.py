@@ -20,12 +20,13 @@ Instrucciones:
 
 # TODO 1: Pide el primer número al usuario y conviértelo a float
 # num1 = ...
-num1 = input("Introduce el primer número -->")
+num1 = input("Introduce el primer número --> ")
 float_num1 = float(num1)
 
 # TODO 2: Pide el segundo número al usuario y conviértelo a float
 # num2 = ...
-
+num2 = input("Introduce el segundo número --> ")
+float_num2 = float(num2)
 
 # TODO 3: Pregunta qué operación desea realizar
 # Pista: input("¿Qué operación deseas realizar? (+, -, *, /): ")
