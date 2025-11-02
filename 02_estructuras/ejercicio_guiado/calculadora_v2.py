@@ -110,3 +110,10 @@ print(f"{float_num1} {operacion} {float_num2} = {round(resultado, 2)}")
 # ❌ Lo siento. No se reconoce la operación que ha introducido. Vuelva a intentarlo.
 # --------------------------------------------------
 # Éxito ✅ 
+# --------------------------------------------------
+# Segundo test: introducir un string en uno de los dos números que piden al usuario.
+# --------------------------------------------------
+# Probar con dato 'hola':
+# Introduce el primer número --> hola
+# ERROR ❌
+# Motivo: ValueError: could not convert string to float: 'hola'
