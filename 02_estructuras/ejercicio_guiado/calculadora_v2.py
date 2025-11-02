@@ -20,7 +20,8 @@ Instrucciones:
 
 # TODO 1: Pide el primer número al usuario y conviértelo a float
 # num1 = ...
-
+num1 = input("Introduce el primer número -->")
+float_num1 = float(num1)
 
 # TODO 2: Pide el segundo número al usuario y conviértelo a float
 # num2 = ...
