@@ -138,3 +138,14 @@ except NameError:
 # Por favor, reinicie el programa. 🛠️
 # --------------------------------------------------
 # Mensaje mostrado con éxito ✅
+# --------------------------------------------------
+# Cuarto test: al agregar try/except, ingresar un operador que no está donde le pide el programa (%)
+# --------------------------------------------------
+# Introduce el primer número --> 5
+# Introduce el segundo número --> 3
+# ¿Qué operación desea realizar? (+, -, *, /) --> %
+# ❌ Lo siento. No se reconoce la operación que ha introducido. Vuelva a intentarlo.
+# ❌ No ha generado el resultado que esperaba.
+# Por favor, reinicie el programa. 🛠️
+# --------------------------------------------------
+# Mensaje mostrado con éxito ✅
