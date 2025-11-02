@@ -27,6 +27,7 @@ primer_numero = input("Ingrese un número: ")
 # segundo_numero = ...
 segundo_numero = input("Ingrese otro número: ")
 
+
 # TODO 3: Convierte los strings a números decimales
 # Pista: usa float() para permitir decimales (ej: 3.5)
 # num1 = float(primer_numero)
@@ -42,6 +43,7 @@ resultado = num_float1 + num_float2
 # Pista: print("El resultado es:", resultado)
 print(f"{num_float1} + {num_float2} = {resultado}")
 
+
 # ¡Ya está! Ejecuta el programa y prueba con diferentes números
 # Ejemplos para probar:
 # - 5 y 3 → debe dar 8
@@ -55,3 +57,4 @@ print(f"{num_float1} + {num_float2} = {resultado}")
 # Ingrese otro número: 9
 # 4.0 + 9.0 = 13.0
 # Éxito ✅ 
+

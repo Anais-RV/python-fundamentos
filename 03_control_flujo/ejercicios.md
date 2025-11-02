@@ -2,6 +2,16 @@
 
 Tiempo estimado: 3–4h
 
+---
+
+## 🎯 Ejercicio guiado: La Calculadora que Crece (v3)
+
+Evolución de la calculadora: añade menú interactivo con bucles y validación.
+
+👉 **[Ver guía completa: ejercicio_guiado/GUIA.md](./ejercicio_guiado/GUIA.md)**
+
+---
+
 ## Guiado 1: Clasificador simple
 Pide un número y clasifícalo como negativo, cero o positivo. Valida `ValueError`.
 

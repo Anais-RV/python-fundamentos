@@ -2,6 +2,16 @@
 
 Tiempo estimado: 3–4h
 
+---
+
+## 🎯 Ejercicio guiado: La Calculadora que Crece (v4)
+
+Evolución de la calculadora: refactoriza el código en funciones modulares.
+
+👉 **[Ver guía completa: ejercicio_guiado/GUIA.md](./ejercicio_guiado/GUIA.md)**
+
+---
+
 ## Guiado 1: Función saludo
 Crea `def saludar(nombre):` que retorne `Hola, <nombre>`.
 

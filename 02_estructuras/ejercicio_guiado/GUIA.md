@@ -79,4 +79,5 @@ En el módulo 03 añadirás un menú interactivo que se repite hasta que el usua
 ---
 
 **Versión anterior**: [`01_intro/ejercicio_guiado/GUIA.md`](../../01_intro/ejercicio_guiado/GUIA.md)  
+
 **Siguiente versión**: [`03_control_flujo/ejercicio_guiado/GUIA.md`](../../03_control_flujo/ejercicio_guiado/GUIA.md) - Añadirás menú con bucles

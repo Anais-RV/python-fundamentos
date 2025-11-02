@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Si utilizas este material educativo, por favor cita como se indica a continuación."
+type: software
+title: "Python Fundamentos - Material Educativo Progresivo"
+authors:
+  - family-names: "Rodríguez Villanueva"
+    given-names: "Anaïs"
+    orcid: ""
+repository-code: "https://github.com/Anais-RV/python-fundamentos"
+url: "https://github.com/Anais-RV/python-fundamentos"
+abstract: >
+  Repositorio pedagógico de ejercicios de Python con estructura clara,
+  ejercicios graduados, ejemplos progresivos y ejercicio guiado evolutivo
+  "La Calculadora que Crece" que abarca 6 módulos fundamentales.
+keywords:
+  - python
+  - educación
+  - tutorial
+  - ejercicios
+  - aprendizaje
+  - programación
+  - fundamentos
+license: MIT
+version: 1.0.0
+date-released: 2025-10-23

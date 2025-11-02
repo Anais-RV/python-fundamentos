@@ -16,7 +16,7 @@ REQUIRED_PATHS = [
     os.path.join("docs", "roadmap.md"),
     os.path.join("docs", "rubrica-evaluacion.md"),
     os.path.join("docs", "checklist-revision-pares.md"),
-    os.path.join("01_intro", "README.md"),
+    os.path.join("01_intro", "MODULO.md"),  # Cambiado de README.md a MODULO.md
     os.path.join("01_intro", "ejercicios.md"),
     os.path.join("01_intro", "ejemplos", "hola.py"),
 ]
