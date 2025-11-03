@@ -134,3 +134,6 @@ while True:
 # Segundo test: calcular 'hola' como num1 y 5 como num2 con cualquier operacion
 # Resultado: Error ❌
 # Motivo: ValueError: could not convert string to float: 'hola'
+# --------------------------------------------------
+# Tercer test: introducir 'hola' para verificar si sale el mensaje de error y que siga corriendo el programa
+# Resultado: Éxito ✅ 
