@@ -63,46 +63,56 @@ while True:
     # TODO 6: Pide los dos números
     # num1 = float(input("Primer número: "))
     # num2 = float(input("Segundo número: "))
-    num1 = float(input("Introduce su primer número: "))
-    num2 = float(input("Introduce su segundo número: "))
+    num1 = input("Introduce su primer número: ")
+    num2 = input("Introduce su segundo número: ")
 
-    # TODO 7: Controla la división por cero
-    # if opcion == "4" and num2 == 0:
-    #     print("❌ Error: No se puede dividir por cero")
-    #     continue  # Vuelve al menú sin hacer la operación
-    if opcion == "4" and num2 == 0:
-        print("❌ Error: No se puede dividir por 0")
+    # TODO 6.5: Validar si los dos números son de tipo float
+    try:
+        num1 = float(num1)
+        num2 = float(num2)
+
+        # TODO 7: Controla la división por cero
+        # if opcion == "4" and num2 == 0:
+        #     print("❌ Error: No se puede dividir por cero")
+        #     continue  # Vuelve al menú sin hacer la operación
+        if opcion == "4" and num2 == 0:
+            print("❌ Error: No se puede dividir por 0")
+            continue
+
+        # TODO 8: Realiza la operación según la opción elegida
+        # if opcion == "1":
+        #     resultado = num1 + num2
+        #     simbolo = "+"
+        # elif opcion == "2":
+        #     resultado = num1 - num2
+        #     simbolo = "-"
+        # elif opcion == "3":
+        #     resultado = num1 * num2
+        #     simbolo = "*"
+        # elif opcion == "4":
+        #     resultado = num1 / num2
+        #     simbolo = "/"
+        if opcion == "1":
+            resultado = num1 + num2
+            simbolo = "+"
+        if opcion == "2":
+            resultado = num1 - num2
+            simbolo = "-"
+        if opcion == "3":
+            resultado = num1 * num2
+            simbolo = "*"
+        if opcion == "4":
+            resultado = num1 / num2
+            simbolo = "/"
+
+        # TODO 9: Muestra el resultado con f-string
+        # print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
+        print(f"{num1} {simbolo} {num2} = {round(resultado, 2)}")
+
+    # TODO 10: Muestra el mensaje de error usando except
+    except ValueError:
+        print(f"ERROR ❌. Uno de los valores introducidos (num1: {num1} | num2: {num2}) no es un número. Vuelva a intentarlo.")
         continue
-
-    # TODO 8: Realiza la operación según la opción elegida
-    # if opcion == "1":
-    #     resultado = num1 + num2
-    #     simbolo = "+"
-    # elif opcion == "2":
-    #     resultado = num1 - num2
-    #     simbolo = "-"
-    # elif opcion == "3":
-    #     resultado = num1 * num2
-    #     simbolo = "*"
-    # elif opcion == "4":
-    #     resultado = num1 / num2
-    #     simbolo = "/"
-    if opcion == "1":
-        resultado = num1 + num2
-        simbolo = "+"
-    if opcion == "2":
-        resultado = num1 - num2
-        simbolo = "-"
-    if opcion == "3":
-        resultado = num1 * num2
-        simbolo = "*"
-    if opcion == "4":
-        resultado = num1 / num2
-        simbolo = "/"
-
-    # TODO 9: Muestra el resultado con f-string
-    # print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
-    print(f"{num1} {simbolo} {num2} = {round(resultado, 2)}")
 
 # ¡Excelente trabajo! Ahora tienes una calculadora interactiva que:
 # - Se repite hasta que el usuario quiera salir
