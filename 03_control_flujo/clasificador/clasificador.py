@@ -20,3 +20,23 @@ try:
 # TODO 5: Mensaje de error si num no es un número
 except ValueError:
     print(f"ERROR ❌. El número introducido no es un número.")
+
+# Perfecto! Ahora ya se tiene un clasificador de números interactivo.
+# Vamos a hacer pruebas:
+# -----------------------------------------------------------------
+# Nº1
+# Escribe un número --> 10
+# Positivo
+# -----------------------------------------------------------------
+# Nº2
+# Escribe un número --> -25
+# Negativo
+# -----------------------------------------------------------------
+# Nº3
+# Escribe un número --> 0
+# Cero
+# -----------------------------------------------------------------
+# Nº4
+# Escribe un número --> pepe
+# ERROR ❌. El número introducido no es un número.
+# -----------------------------------------------------------------
