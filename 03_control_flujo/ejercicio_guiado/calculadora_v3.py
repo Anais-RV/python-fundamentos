@@ -120,3 +120,7 @@ while True:
 # --------------------------------------------------
 # Primer test: calcular 4 como num1 y 5 como num2 con cualquier operacion
 # Resultado: Éxito ✅ 
+# --------------------------------------------------
+# Segundo test: calcular 'hola' como num1 y 5 como num2 con cualquier operacion
+# Resultado: Error ❌
+# Motivo: ValueError: could not convert string to float: 'hola'
