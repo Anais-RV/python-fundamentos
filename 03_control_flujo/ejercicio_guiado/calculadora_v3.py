@@ -117,3 +117,6 @@ while True:
 # 4. Sal con la opción 5 → el programa debe terminar correctamente
 #
 # 💡 En la v4 organizarás todo este código en funciones para que sea más limpio
+# --------------------------------------------------
+# Primer test: calcular 4 como num1 y 5 como num2 con cualquier operacion
+# Resultado: Éxito ✅ 
