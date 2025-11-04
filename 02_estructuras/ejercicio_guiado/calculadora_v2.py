@@ -20,37 +20,61 @@ Instrucciones:
 
 # TODO 1: Pide el primer número al usuario y conviértelo a float
 # num1 = ...
-
+try:
+    num1=float(input("Dame una variable: "));
 
 # TODO 2: Pide el segundo número al usuario y conviértelo a float
 # num2 = ...
-
+    num2=float(input("Dame otra: "));
 
 # TODO 3: Pregunta qué operación desea realizar
 # Pista: input("¿Qué operación deseas realizar? (+, -, *, /): ")
 # operacion = ...
+    print ("Que operacion quieres hacer: ")
+ 
+    operacion =input()
+except:
+    print ("Valores no aceptados")
+    num1=0
+    num2=0
+    operacion=0
 
 
 # TODO 4: Realiza la operación correspondiente usando if/elif/else
 # Pista: Compara la variable 'operacion' con "+", "-", "*", "/"
 #
-# if operacion == "+":
-#     resultado = num1 + num2
-# elif operacion == "-":
-#     ...
-# elif operacion == "*":
-#     ...
-# elif operacion == "/":
-#     ...
-# else:
-#     print("❌ Operación no válida")
+if operacion == "+":
+    resultado = num1 + num2
+elif operacion == "-":
+    ...
+elif operacion == "*":
+    ...
+elif operacion == "/":
+    ...
+else:
+    print("❌ Operación no válida")
+
+
+if operacion == "+":
+    resultado = num1 + num2
+elif operacion == "-":
+    resultado = num1 - num2
+elif operacion == "*":
+    resultado = num1 * num2
+elif operacion == "/":
+    resultado = round(num1 / num2,2)
+else:
+    print("❌ Operación no válida");
+    resultado="Operacion no realizada"
+     
 
 
 # TODO 5: Muestra el resultado usando f-strings
 # Pista: f"El resultado de {num1} {operacion} {num2} = {resultado:.2f}"
 # El :.2f muestra solo 2 decimales
-# print(f"...")
+print(f"...")
 
+print(f"el resutado es: {resultado}")
 
 # ¡Perfecto! Ahora tu calculadora puede hacer las 4 operaciones básicas
 #

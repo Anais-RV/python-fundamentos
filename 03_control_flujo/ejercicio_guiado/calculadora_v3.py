@@ -76,7 +76,22 @@ while True:
 
 
     # TODO 9: Muestra el resultado con f-string
-    print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
+    print(f"\n✅ {num1} {simbolo} {num2} = {resultado:.2f}")
+
+
+    try:
+        if (int(resultado)==0):
+            print ("Es valor cero");
+        
+        if (int(resultado)>0):
+            print ("Es positivo");
+
+
+        if (int(resultado)<0):
+            print ("Es negativo");
+
+    except ValueError:
+        print(f"{resultado} no es un numero")
 
 
 # ¡Excelente trabajo! Ahora tienes una calculadora interactiva que:

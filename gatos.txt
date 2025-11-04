@@ -1,0 +1,1 @@
+['Conteos de gatos:          3\n', 'Peso medio de los gatos:   {p1_funciones.media(gatos)}\n', 'Peso mediana de los gatos: 10\n', '--Bola de nieve II es el felino con mas peso es con 15.0 Kg.']
