@@ -161,10 +161,12 @@ Cada versión incluye:
    - Listas, tuplas, diccionarios, sets
    
 6. **[06_archivos_y_modulos](./06_archivos_y_modulos/)** - Persistencia y organización
-   - Leer/escribir archivos, imports
+   - Leer/escribir archivos, imports, JSON/CSV
    
-7. **[07_mini_proyectos](./07_mini_proyectos/)** - Aplicación práctica
-   - Proyectos integradores
+7. **[07_mini_proyectos](./07_mini_proyectos/)** - Aplicación práctica y operador morsa
+   - 🦭 **Operador morsa (`:=`)** - Feature moderno Python 3.8+
+   - Refactorización de código (calculadora v7)
+   - Mini-proyectos integradores
 
 ---
 
