@@ -19,8 +19,8 @@ Instrucciones:
 4. Organiza todo en una función main()
 """
 
-# TODO 1: Define las funciones para cada operación matemática
-# Cada función debe recibir dos parámetros (a, b) y devolver el resultado
+# TODO 1: Define las funciones para cada operación matemática   
+# Cada función debe recibir dos parámetros (a, b) y devolver el resultado  
 
 def sumar(a, b):
     """Suma dos números.

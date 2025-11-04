@@ -5,7 +5,7 @@
 print("---- BIGOTES FELICES ----")
 print("-- Asignación de gatos por turnos --")
 
-# TODO 1: Bucle while qe se repite hasta insertar un número de gatos que sea mayor que 0
+# TODO 1: Bucle while que se repite hasta insertar un número de gatos que sea mayor que 0
 while True:
     # TODO 2: Intentar convertir 'gatos' a int a la hora que pida el programa al usuario
     try: 
