@@ -473,6 +473,41 @@ all([True, True, False])    # False
 
 ---
 
+## 🦭 Operador Morsa (`:=`) - Python 3.8+
+
+```python
+# Asignación en expresiones
+# Sintaxis: (variable := valor)
+
+# ❌ Sin operador morsa
+nombre = input("Nombre: ")
+if nombre != "":
+    print(f"Hola, {nombre}")
+
+# ✅ Con operador morsa
+if (nombre := input("Nombre: ")) != "":
+    print(f"Hola, {nombre}")
+
+# Bucle while con input
+while (comando := input("Comando: ")) != "salir":
+    print(f"Ejecutando: {comando}")
+
+# En list comprehensions
+numeros = [1, 2, 3, 4, 5]
+cuadrados_pares = [c for n in numeros if (c := n**2) % 2 == 0]
+# Resultado: [4, 16]
+
+# Validación con lectura de archivo
+with open("datos.txt") as f:
+    while (linea := f.readline()):
+        print(linea.strip())
+
+# ⚠️ Recuerda: Solo úsalo cuando mejore la legibilidad
+# Ver cheatsheets/07_operador_morsa.md para guía completa
+```
+
+---
+
 ## 📚 Recursos
 
 - [Documentación oficial](https://docs.python.org/es/3/)
