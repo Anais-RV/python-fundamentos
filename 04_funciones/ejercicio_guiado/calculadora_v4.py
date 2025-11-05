@@ -41,13 +41,17 @@ def sumar(a, b):
 def restar(a, b):
     """Resta dos números."""
     # TODO: Implementa la resta
-    pass
+    # pass --> sentencia nula
+    resta = a - b
+    return resta
 
 
 def multiplicar(a, b):
     """Multiplica dos números."""
     # TODO: Implementa la multiplicación
-    pass
+    # pass --> sentencia nula
+    multi = a * b
+    return multi
 
 
 def dividir(a, b):
@@ -61,7 +65,9 @@ def dividir(a, b):
         El resultado de a / b
     """
     # TODO: Implementa la división
-    pass
+    # pass --> sentencia nula
+    division = a / b
+    return division
 
 
 # TODO 2: Crea una función para mostrar el menú
@@ -73,7 +79,15 @@ def mostrar_menu():
     # print("3. Multiplicar")
     # print("4. Dividir")
     # print("5. Salir")
-    pass
+
+    # pass --> Sentencia nula
+    print("\n---- Calculadora ----")
+    print("1. Sumar")
+    print("2. Restar")
+    print("3. Multiplicar")
+    print("4. Dividir")
+    print("5. Salir")
+
 
 
 # TODO 3: Crea una función para obtener dos números del usuario
@@ -86,7 +100,11 @@ def obtener_numeros():
     # num1 = float(input("Primer número: "))
     # num2 = float(input("Segundo número: "))
     # return num1, num2
-    pass
+    # pass --> Sentencia nula
+    num1 = float(input("Primer número --> "))
+    num2 = float(input("Segundo número -->"))
+    return num1, num2
+       
 
 
 # TODO 4: Crea la función principal que contiene el bucle del programa
@@ -94,56 +112,86 @@ def main():
     """Función principal de la calculadora."""
 
     # while True:
+    while True:
         # TODO 4.1: Muestra el menú llamando a la función mostrar_menu()
         # mostrar_menu()
+        mostrar_menu()
 
         # TODO 4.2: Pide la opción al usuario
         # opcion = input("\nElige una opción: ")
+        opcion = input("\nElige una opción: ")
 
         # TODO 4.3: Si elige salir, termina
         # if opcion == "5":
         #     print("¡Hasta pronto! 👋")
         #     break
+        if opcion == "5":
+            print("Hasta luego Lucas! ✨")
+            break
 
         # TODO 4.4: Valida que la opción sea válida
         # if opcion not in ["1", "2", "3", "4"]:
         #     print("❌ Opción no válida")
         #     continue
+        if opcion not in ["1", "2", "3", "4"]:
+            print("\n❌ Opción no válida.")
+            continue
 
         # TODO 4.5: Obtén los números llamando a la función obtener_numeros()
         # num1, num2 = obtener_numeros()
+        try:
+            num1, num2 = obtener_numeros()
 
-        # TODO 4.6: Controla división por cero
-        # if opcion == "4" and num2 == 0:
-        #     print("❌ No se puede dividir por cero")
-        #     continue
+            # TODO 4.6: Controla división por cero
+            # if opcion == "4" and num2 == 0:
+            #     print("❌ No se puede dividir por cero")
+            #     continue
+            if opcion == "4" and num2 == 0:
+                print("\n❌ No se puede dividir por cero")
+                continue
 
-        # TODO 4.7: Llama a la función correspondiente según la opción
-        # Nota cómo ahora el código es mucho más limpio
-        # if opcion == "1":
-        #     resultado = sumar(num1, num2)
-        #     simbolo = "+"
-        # elif opcion == "2":
-        #     resultado = restar(num1, num2)
-        #     simbolo = "-"
-        # elif opcion == "3":
-        #     resultado = multiplicar(num1, num2)
-        #     simbolo = "*"
-        # elif opcion == "4":
-        #     resultado = dividir(num1, num2)
-        #     simbolo = "/"
+            # TODO 4.7: Llama a la función correspondiente según la opción
+            # Nota cómo ahora el código es mucho más limpio
+            # if opcion == "1":
+            #     resultado = sumar(num1, num2)
+            #     simbolo = "+"
+            # elif opcion == "2":
+            #     resultado = restar(num1, num2)
+            #     simbolo = "-"
+            # elif opcion == "3":
+            #     resultado = multiplicar(num1, num2)
+            #     simbolo = "*"
+            # elif opcion == "4":
+            #     resultado = dividir(num1, num2)
+            #     simbolo = "/"
+            if opcion == "1":
+                resultado = sumar(num1, num2)
+                simbolo = "+"
+            elif opcion == "2":
+                resultado = restar(num1, num2)
+                simbolo = "-"
+            elif opcion == "3":
+                resultado = multiplicar(num1, num2)
+                simbolo = "X"
+            elif opcion == "4":
+                resultado = dividir(num1, num2)
+                simbolo = "/"
 
-        # TODO 4.8: Muestra el resultado
-        # print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
-
-    pass
+            # TODO 4.8: Muestra el resultado
+            # print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
+            print(f"\n{num1} {simbolo} {num2} = {resultado:.2f}")
+        except ValueError:
+            print("\n❌ Se debe introducir un número.")
+            continue
+    # pass --> Sentencia nula
 
 
 # TODO 5: Punto de entrada del programa
 # Este patrón permite que el archivo sea importable sin ejecutarse automáticamente
 # if __name__ == "__main__":
 #     main()
-
+if __name__ == "__main__":
+    main()
 
 # ¡Excelente! Has refactorizado tu calculadora con funciones.
 #
