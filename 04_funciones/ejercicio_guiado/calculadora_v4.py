@@ -33,7 +33,9 @@ def sumar(a, b):
         La suma de a y b
     """
     # return a + b
-    pass  # Borra esto y escribe el return
+    suma = a + b
+    return suma
+    # pass  # Borra esto y escribe el return
 
 
 def restar(a, b):
