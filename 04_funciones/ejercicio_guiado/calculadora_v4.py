@@ -137,9 +137,11 @@ def main():
             print("\n❌ Opción no válida.")
             continue
 
-        # TODO 4.5: Obtén los números llamando a la función obtener_numeros()
-        # num1, num2 = obtener_numeros()
+        # TODO 4.4.5: Validar si el valor introducido es número usando try/except
         try:
+
+            # TODO 4.5: Obtén los números llamando a la función obtener_numeros()
+            # num1, num2 = obtener_numeros()
             num1, num2 = obtener_numeros()
 
             # TODO 4.6: Controla división por cero
@@ -180,6 +182,7 @@ def main():
             # TODO 4.8: Muestra el resultado
             # print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
             print(f"\n{num1} {simbolo} {num2} = {resultado:.2f}")
+        # TODO 4.9: Muestra el error si el valor introducido no es un número
         except ValueError:
             print("\n❌ Se debe introducir un número.")
             continue
