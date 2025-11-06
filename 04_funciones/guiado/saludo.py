@@ -1,5 +1,5 @@
 # Guiado 1: Función saludo
-# Crea `def saludar(nombre):` que retorne `Hola, <nombre>`.
+# Enunciado: Crea `def saludar(nombre):` que retorne `Hola, <nombre>`.
 
 # TODO 0: Imprime el titulo de ejercicio
 print("--- Función Saludo ---")
