@@ -24,3 +24,11 @@ if __name__ == "__main__":
     # TODO 9: Mensaje de error si el valor introducido no es un número
     except ValueError:
         print("ERROR ❌. Debe introducir un número.")
+
+# EJEMPLO:
+# --- Par o Impar ---
+# 
+# Escribe un número (Resultado 'True' si es par; 'False' si es impar) --> 4
+# True
+# -------------------------------------------------------------------------
+# Éxito ✅
