@@ -1,9 +1,6 @@
 # EJERCICIO AUTÓNOMO 2: Área del Rextángulo
 # Enunciado: `area_rectangulo(a, b)`
 
-# TODO 0: Imprimir el título del ejercicio
-print("--- Área del rectángulo ---")
-
 # TODO 1: Crear la función 'area_rectangulo(a, b)'
 def area_rectangulo(a, b):
     # TODO 2: Calcular el area (base X altura)
@@ -13,6 +10,8 @@ def area_rectangulo(a, b):
 
 # TODO 4: Punto de entrada del programa
 if __name__ == "__main__":
+    # TODO 4.5: Imprimir el título del ejercicio
+    print("--- Área del rectángulo ---")
     # TODO 5: Verificar si se han introducido dos números usando try/except
     try:
         # TODO 6: Pedir la base del rectángulo

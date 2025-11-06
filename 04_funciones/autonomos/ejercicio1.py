@@ -1,9 +1,6 @@
 # EJERCICIO AUTÓNOMO 1: Es par
 # Enunciado: `es_par(n)` -> bool
 
-# TODO 0: Imprimir título del ejercicio
-print("--- Par o Impar ---")
-
 # TODO 1: Crear la función 'def es_par(n)'
 def es_par(n):
     # TODO 2: Verificar si el número es divisible por 2 y devuelva 0 (par) o no es divisible por 2 (impar)
@@ -16,6 +13,8 @@ def es_par(n):
     
 # TODO 5: Punto de entrada del programa
 if __name__ == "__main__":
+    # TODO 5.1: Imprimir título del ejercicio
+    print("--- Par o Impar ---")
     # TODO 6: Verificar si el valor introducido es un número usando try/except
     try:
         # TODO 7: Pedir un número al usuario
