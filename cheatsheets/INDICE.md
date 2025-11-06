@@ -16,6 +16,7 @@ Referencia rápida de Python para consultar mientras programas.
 | 4 | [04_funciones.md](./04_funciones.md) | def, parámetros, return, scope, lambdas |
 | 5 | [05_colecciones.md](./05_colecciones.md) | Listas, tuplas, diccionarios, sets |
 | 6 | [06_archivos_y_modulos.md](./06_archivos_y_modulos.md) | Archivos, I/O, imports, JSON/CSV |
+| 7 | [07_operador_morsa.md](./07_operador_morsa.md) | **Operador morsa (`:=`)**, refactorización ⭐ |
 
 ### 🚀 Referencia todo-en-uno
 
@@ -49,10 +50,13 @@ Sigue este orden si es tu primera vez con Python:
 
 ```
 01_intro.md → 02_estructuras.md → 03_control_flujo.md → 
-04_funciones.md → 05_colecciones.md → 06_archivos_y_modulos.md
+04_funciones.md → 05_colecciones.md → 06_archivos_y_modulos.md →
+07_operador_morsa.md (opcional, Python 3.8+)
 ```
 
 Luego mantén abierto `python_quick_reference.md` como referencia constante.
+
+> 💡 **Nota sobre el operador morsa**: Es un feature opcional de Python 3.8+. No es necesario para aprender Python, pero es útil para escribir código más conciso y pythónico.
 
 ---
 
