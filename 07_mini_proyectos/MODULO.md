@@ -1,5 +1,10 @@
 # 07_mini_proyectos
 
+ HEAD
+Aquí integrarás lo aprendido en mini-retos de 60–90 minutos. Revisa `retos.md`.
+
+
+=======
 ## 🎯 Objetivos de aprendizaje
 
 En este módulo integrarás **todo lo aprendido** y aprenderás sobre el **operador morsa** (`:=`), un feature moderno de Python 3.8+.
@@ -129,3 +134,4 @@ Este módulo cierra el curso de fundamentos de Python. Has aprendido:
 **¡Felicidades por llegar hasta aquí!** 🎉
 
 Has construido una base sólida en Python. Ahora es momento de aplicar todo en proyectos reales.
+>>>>>>> upstream/main

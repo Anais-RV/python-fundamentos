@@ -66,7 +66,7 @@ def obtener_numeros():
 # TODO 1: Crea una lista global para almacenar el historial
 # (Nota: en programación avanzada evitamos globales, pero aquí es didáctico)
 # historial = []
-
+historial = []
 
 def guardar_operacion(num1, num2, operacion, resultado):
     """Guarda una operación en el historial.
@@ -77,6 +77,7 @@ def guardar_operacion(num1, num2, operacion, resultado):
         operacion: Símbolo de la operación (+, -, *, /)
         resultado: Resultado de la operación
     """
+      
     # TODO 2: Crea un diccionario con los datos de la operación
     # operacion_dict = {
     #     "num1": num1,
@@ -84,11 +85,20 @@ def guardar_operacion(num1, num2, operacion, resultado):
     #     "operacion": operacion,
     #     "resultado": resultado
     # }
+    
 
     # TODO 3: Añade el diccionario a la lista historial
     # historial.append(operacion_dict)
 
     pass
+    operacion_dict = {
+        "num1": num1,
+        "num2": num2,
+        "operacion": operacion,
+        "resultado": resultado
+    }
+    historial.append(operacion_dict)
+
 
 
 def mostrar_historial():
@@ -108,7 +118,12 @@ def mostrar_historial():
     #     print(f"{i}. {op['num1']} {op['operacion']} {op['num2']} = {op['resultado']:.2f}")
 
     pass
-
+    if not historial:
+        print("No hay operaciones en el historial")
+        return
+    print("\nHistorial de operaciones")
+    for i, op in enumerate(historial, 1):
+            print(f"{i}. {op['num1']} {op['operacion']} {op['num2']} = {op['resultado']:.2f}")
 
 # ===== FUNCIÓN PRINCIPAL =====
 
@@ -160,7 +175,38 @@ def main():
         # guardar_operacion(num1, num2, simbolo, resultado)
 
     pass
-
+    while True:
+        mostrar_menu()
+        opcion = input("\nElige una opción: ")
+        if opcion == "6":
+            print("¡See you soon!")
+            break
+        if opcion == "5":
+            mostrar_historial()
+            continue
+        if opcion not in ["1", "2", "3", "4"]:
+            print("Opción no válida")
+            continue
+        
+        num1, num2 = obtener_numeros()
+        
+        if opcion == "4" and num2 == 0:
+            print("No se puede dividir entre cero...")
+            
+        if opcion == "1":
+            resultado = sumar(num1, num2)
+            simbolo = "+"
+        elif opcion == "2":
+            resultado = restar(num1, num2)
+            simbolo = "-"
+        elif opcion == "3":
+            resultado = multiplicar(num1, num2)
+            simbolo = "*"
+        elif opcion == "4":
+            resultado = dividir(num1, num2)
+            simbolo = "/"
+            
+        print(f"{num1} {simbolo} {num2} ? {resultado:.2f}")
 
 if __name__ == "__main__":
     main()
