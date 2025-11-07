@@ -51,43 +51,55 @@ def dividir(a, b):
     """Divide dos números."""
     return a / b
 
+print(s := sumar(67, 32))
+print(r := restar(6, 342))
+print(m := multiplicar(265, 2))
+print(d := dividir(546, 54))
+
 
 # ===== FUNCIONES DE INTERFAZ =====
 
 def mostrar_menu():
     """Muestra el menú de opciones de la calculadora."""
-    print("\n=== CALCULADORA ===")
-    print("1. Sumar")
-    print("2. Restar")
-    print("3. Multiplicar")
-    print("4. Dividir")
-    print("5. Ver historial")
-    print("6. Limpiar historial")
-    print("7. Salir")
+    print(t := "\n=== CALCULADORA ===")
+    print(o1 := "1. Sumar")
+    print(o2 := "2. Restar")
+    print(o3 := "3. Multiplicar")
+    print(o4 := "4. Dividir")
+    print(o5 := "5. Ver historial")
+    print(o6 := "6. Limpiar historial")
+    print(o7 := "7. Salir")
+
 
 
 def obtener_numeros():
     """Pide dos números al usuario con validación mejorada."""
+    while True:
+        try:
+            if (a := input("primer número: ")) and (b := input("segnudo número: ")):
+                return float(a), float(b)
+        except ValueError:
+            print("introduce valores numéricos válidos.")
+
 
     # TODO 1: Refactoriza usando operador morsa
     # Combina el input y la validación en una sola expresión
     # Pista: while not (entrada := input(...)).algo():
 
+def obtener_numeros():
     while True:
-        entrada1 = input("Primer número: ")
         try:
-            num1 = float(entrada1)
+            num1 = float(entrada1 := input("primer número: "))
             break
         except ValueError:
-            print("❌ Ingresa un número válido")
+            print("Ingresa un número válido")
 
     while True:
-        entrada2 = input("Segundo número: ")
         try:
-            num2 = float(entrada2)
+            num2 = float(entrada2 := input("segundo número: "))
             break
         except ValueError:
-            print("❌ Ingresa un número válido")
+            print("Ingresa un número válido")
 
     return num1, num2
 
@@ -96,24 +108,22 @@ def obtener_numeros():
 
 def guardar_operacion(num1, num2, operacion, resultado):
     """Guarda una operación en el historial (en memoria)."""
-    operacion_dict = {
+    historial.append(operacion_dict := {
         "num1": num1,
         "num2": num2,
         "operacion": operacion,
         "resultado": resultado
-    }
-    historial.append(operacion_dict)
-
+    })
 
 def mostrar_historial():
     """Muestra todas las operaciones del historial."""
     if not historial:
-        print("📭 No hay operaciones en el historial")
+        print(msg := "📭 No hay operaciones en el historial")
         return
 
-    print("\n📜 HISTORIAL DE OPERACIONES:")
+    print(titulo := "\n📜 HISTORIAL DE OPERACIONES:")
     for i, op in enumerate(historial, 1):
-        print(f"{i}. {op['num1']} {op['operacion']} {op['num2']} = {op['resultado']:.2f}")
+        print(linea := f"{i}. {op['num1']} {op['operacion']} {op['num2']} = {op['resultado']:.2f}")
 
 
 # ===== FUNCIONES DE PERSISTENCIA (archivos JSON) =====
@@ -126,36 +136,43 @@ def cargar_historial():
     """
     try:
         with open(ARCHIVO_HISTORIAL, "r", encoding="utf-8") as archivo:
-            datos = json.load(archivo)
-            print(f"✅ Historial cargado: {len(datos)} operaciones")
+            print(f"Historial cargado: {len(datos := json.load(archivo))} operaciones")
             return datos
     except FileNotFoundError:
-        print("📝 No hay historial previo, iniciando uno nuevo")
+        print(mensaje := "No hay historial previo, iniciando uno nuevo")
         return []
     except json.JSONDecodeError:
-        print("⚠️  Archivo de historial corrupto, iniciando uno nuevo")
+        print(mensaje := "Archivo de historial corrupto, iniciando uno nuevo")
         return []
-
 
 def guardar_historial_archivo():
     """Guarda el historial actual en el archivo JSON."""
     try:
         with open(ARCHIVO_HISTORIAL, "w", encoding="utf-8") as archivo:
             json.dump(historial, archivo, indent=2, ensure_ascii=False)
-        print("✅ Historial guardado correctamente")
+        print(mensaje := "Historial guardado correctamente")
     except Exception as e:
-        print(f"❌ Error al guardar el historial: {e}")
-
+        print(error := f"Error al guardar el historial: {e}")
 
 def limpiar_historial():
     """Limpia el historial en memoria y elimina el archivo."""
     global historial
+    historial.clear()
+    if os.path.exists(ARCHIVO_HISTORIAL):
+        os.remove(ARCHIVO_HISTORIAL)
+        print(mensaje := "Historial limpiado y archivo eliminado")
+    else:
+        print(mensaje := "No había archivo de historial para eliminar")
+
 
     # TODO 2: Refactoriza la confirmación con operador morsa
     # Pista: if (confirmacion := input(...).lower()) != "s":
-    confirmacion = input("⚠️  ¿Estás seguro de que quieres limpiar el historial? (s/n): ")
-    if confirmacion.lower() != "s":
-        print("❌ Operación cancelada")
+def limpiar_historial():
+    """Limpia el historial en memoria y elimina el archivo."""
+    global historial
+
+    if (confirmacion := input("¿Estás seguro de que quieres limpiar el historial? (s/n): ").lower()) != "s":
+        print("Operación cancelada")
         return
 
     historial = []
@@ -163,9 +180,10 @@ def limpiar_historial():
     try:
         if os.path.exists(ARCHIVO_HISTORIAL):
             os.remove(ARCHIVO_HISTORIAL)
-        print("🗑️  Historial limpiado correctamente")
+        print("Historial limpiado correctamente")
     except Exception as e:
-        print(f"❌ Error al eliminar el archivo: {e}")
+        print(f"Error al eliminar el archivo: {e}")
+
 
 
 # ===== FUNCIÓN PRINCIPAL =====
