@@ -1,10 +1,11 @@
-total = 0.0
+total = 0
 while True:
-    s = input("n o fin: ")
-    if s == "fin":
+    entrada  = input("Introduce un número (o 'fin' para terminar): ")
+    if entrada.lower() == "fin":
         break
     try:
-        total += float(s)
+        numero = float(entrada)
+        total += numero
     except ValueError:
-        print("Entrada inválida")
-print(total)
+        print("Por favor, introduce un número válido o 'fin' para salir.")
+print(f"La suma total es: {total}")
