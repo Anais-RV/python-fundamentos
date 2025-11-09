@@ -1,0 +1,5 @@
+2025-11-09 10:00:01 INFO Iniciando sistema
+2025-11-09 10:01:15 ERROR Fallo de conexión
+2025-11-09 10:02:10 INFO Usuario conectado
+2025-11-10 09:15:33 WARN Memoria alta
+2025-11-10 09:16:02 ERROR Archivo no encontrado
