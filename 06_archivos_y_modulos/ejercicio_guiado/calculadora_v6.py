@@ -21,8 +21,8 @@ Instrucciones:
 """
 
 # TODO 1: Importa el módulo json
-# import json
-
+# import json, os
+import json, os
 
 # Nombre del archivo donde se guardará el historial
 ARCHIVO_HISTORIAL = "historial_calculadora.json"
@@ -121,8 +121,21 @@ def cargar_historial():
     #     print("⚠️  Archivo de historial corrupto, iniciando uno nuevo")
     #     return []
 
-    pass
-    return []  # Borra esto cuando implementes la función
+    try:
+        with open(ARCHIVO_HISTORIAL, "r", encoding="utf-8") as archivo:
+            datos = json.load(archivo)
+            print(f"✅ Historial cargado: {len(datos)} operaciones")
+            return datos
+    except FileNotFoundError:
+        # El archivo no existe (primera vez que se ejecuta)
+        print("🗒️ No hay historial previo, iniciando uno nuevo")
+        return [] 
+    except json.JSONDecodeError:
+        # El archivo existe pero está corrupto
+        print("❌ Archivo de historial corrupto, iniciando uno nuevo")
+        return []       
+
+    # pass --> sentencia nula
 
 
 def guardar_historial_archivo():
@@ -137,7 +150,16 @@ def guardar_historial_archivo():
     # except Exception as e:
     #     print(f"❌ Error al guardar el historial: {e}")
 
-    pass
+    try:
+        with open(ARCHIVO_HISTORIAL, "w", encoding="utf-8") as archivo:
+            # indent=2 hace que el JSON sea más legible
+            # ensure_ascii=False permite emojis y carácteres especiales
+            json.dump(historial, archivo, indent=2, ensure_ascii=False)
+        print("✅ Historial guardado correctamente")
+    except Exception as e:
+        print(f"❌ Error al guardar el historial: {e}")
+
+    # pass --> sentencia nula
 
 
 def limpiar_historial():
@@ -151,8 +173,15 @@ def limpiar_historial():
     #     print("❌ Operación cancelada")
     #     return
 
+    confirmacion = input("❗ ¿Estás seguro de que quieres limpiar el historial? (s/n): ")
+    if confirmacion.lower() != "s":
+        print("❌ Operación cancelada")
+        return
+
     # Vacía la lista en memoria
     # historial = []
+
+    historial = []
 
     # Elimina el archivo si existe
     # try:
@@ -162,7 +191,14 @@ def limpiar_historial():
     # except Exception as e:
     #     print(f"❌ Error al eliminar el archivo: {e}")
 
-    pass
+    try: 
+        if os.path.exists(ARCHIVO_HISTORIAL):
+            os.remove(ARCHIVO_HISTORIAL)
+        print("🗑️ Historial limpiado correctamente")
+    except Exception as e:
+        print(f"❌ Error al eliminar el archivo: {e}")
+
+    # pass --> Sentencia nula
 
 
 # ===== FUNCIÓN PRINCIPAL =====
@@ -175,9 +211,17 @@ def main():
     # print("🔄 Cargando historial...")
     # historial = cargar_historial()
 
+    global historial
+    print("🔄 Cargando historial...")
+    historial = cargar_historial()
+
     # while True:
         # mostrar_menu()
         # opcion = input("\nElige una opción: ")
+
+    while True:
+        mostrar_menu()
+        opcion = input("\nElige una opción: ")
 
         # TODO 6: Actualiza la condición de salir (ahora es opción 7)
         # if opcion == "7":
@@ -186,26 +230,50 @@ def main():
         #     print("¡Hasta pronto! 👋")
         #     break
 
+        if opcion == "7":
+            print("💾 Guardando historial...")
+            guardar_historial_archivo()
+            print("¡Hasta pronto! 👋")
+            break
+
         # TODO 7: Añade la opción 5 (ver historial)
         # if opcion == "5":
         #     mostrar_historial()
         #     continue
+
+        if opcion == "5":
+            mostrar_historial()
+            continue
 
         # TODO 8: Añade la opción 6 (limpiar historial)
         # if opcion == "6":
         #     limpiar_historial()
         #     continue
 
+        if opcion == "6":
+            limpiar_historial()
+            continue
+
         # TODO 9: Actualiza la validación de opciones (ahora son 1-6)
         # if opcion not in ["1", "2", "3", "4", "5", "6"]:
         #     print("❌ Opción no válida")
         #     continue
 
+        if opcion not in ["1", "2", "3", "4", "5", "6"]:
+            print("❌ Opción no válida")
+            continue
+
         # num1, num2 = obtener_numeros()
+
+        num1, num2 = obtener_numeros()
 
         # if opcion == "4" and num2 == 0:
         #     print("❌ No se puede dividir por cero")
         #     continue
+
+        if opcion == "4" and num2 == 0:
+            print("❌ No se puede dividir entre 0")
+            continue
 
         # if opcion == "1":
         #     resultado = sumar(num1, num2)
@@ -220,10 +288,26 @@ def main():
         #     resultado = dividir(num1, num2)
         #     simbolo = "/"
 
+        if opcion == "1":
+            resultado = sumar(num1, num2)
+            simbolo = "+"
+        elif opcion == "2":
+            resultado = restar(num1, num2)
+            simbolo = "-"
+        elif opcion == "3":
+            resultado = multiplicar(num1, num2)
+            simbolo = "*"
+        elif opcion == "4":
+            resultado = dividir(num1, num2)
+            simbolo = "/"
+
         # print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
         # guardar_operacion(num1, num2, simbolo, resultado)
 
-    pass
+        print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
+        guardar_operacion(num1, num2, simbolo, resultado)
+
+    # pass --> sentencia nula
 
 
 if __name__ == "__main__":
