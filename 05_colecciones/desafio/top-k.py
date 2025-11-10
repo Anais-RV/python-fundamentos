@@ -10,7 +10,7 @@ def imprimir(gatos):
 # TODO 2: Función que ordena de mayor a menor peso la lista de gatos
 def los_tres_pesados(gatos):
 
-    print("--- Listando gatos de menor a mayor... ---")
+    print("\n--- Listando gatos de menor a mayor... ---")
 
     gatos_ordenados = sorted(gatos, key=lambda p:p['peso'], reverse=True)
 
