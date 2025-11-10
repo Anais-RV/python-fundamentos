@@ -54,7 +54,7 @@ def comprensiones(lista, texto):
     imparescubos = [numero ** 3 for numero in lista if numero % 2 != 0]
     print(f"Lista de números impares al cubo: {imparescubos}")
 
-
+# TODO 3: Crear función principal
 def main():
     print("--- Slicing y compresiones simples de listas ---")
 
