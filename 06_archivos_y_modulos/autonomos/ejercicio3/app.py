@@ -7,9 +7,10 @@ from utiles import leer_lineas, guardar_lineas
 # TODO 2: Imprimir título de app.py
 print("--- APP ---")
 
-# TODO 3: Ejemplos básicos
+# TODO 3: Ejemplo básico
 
-# Nº1 Gestión de tareas
+# Gestión de tareas
+print("\nEjemplo 1: Gestión de Tareas")
 
 tareas = [
     "Despertarme a las 8:30",
@@ -22,4 +23,4 @@ tareaTxt = "tarea.txt"
 
 guardar_lineas(tareaTxt, tareas)
 
-leer_lineas()
+leer_lineas(tareaTxt)

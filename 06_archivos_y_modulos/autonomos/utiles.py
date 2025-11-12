@@ -23,6 +23,7 @@ def leer_lineas(ruta):
     except Exception as e:
         print(f"\n❌ Error al leer el archivo: {e}")
 
+# TODO 2: Función para guardar las líneas a un archivo específico
 def guardar_lineas(ruta, lineas):
     try:
         print("Escribiendo archivo...\n")
