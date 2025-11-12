@@ -4,7 +4,7 @@
 # TODO 1: Función que lee el contenido del archivo y las líneas de texto que contiene
 def leer_lineas(ruta):
     try:
-        print("Leyendo archivo...")
+        print("Leyendo archivo... \n")
         with open(ruta, 'r', encoding="utf-8") as archivo:
 
             contenido = archivo.read()
@@ -19,7 +19,7 @@ def leer_lineas(ruta):
         print(f"Archivo {ruta} corregido con éxito ✅")
 
     except FileNotFoundError:
-        print("❌ Archivo no encontrado")
+        print("❌ Archivo no encontrado.\n")
     except Exception as e:
         print(f"\n❌ Error al leer el archivo: {e}")
 
@@ -33,5 +33,7 @@ def guardar_lineas(ruta, lineas):
                 archivo.write(f"\n{linea}")
         
         print(f"Archivo {ruta} creado con éxito ✅")
+    except FileNotFoundError:
+        print("❌ Archivo no encontrado.\n")
     except Exception as e:
         print(f"\n❌ Error al escribir el archivo: {e}")
