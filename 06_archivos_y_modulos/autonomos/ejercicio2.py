@@ -4,6 +4,9 @@
 # TODO 1: Importamos las funciones del módulo 'utiles.py'
 from utiles import leer_lineas, guardar_lineas
 
+# TODO 2: Imprimir titulo del ejercicio
+print("--- Módulo utiles.py ---")
+
 # TODO 2: Ejemplo Nº 1 de lista de tareas
 print("\nEjemplo 1 de guardar tareas:")
 
