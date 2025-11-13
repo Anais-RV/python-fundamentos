@@ -65,7 +65,7 @@ def obtener_numeros():
 
 # TODO 1: Crea una lista global para almacenar el historial
 # (Nota: en programación avanzada evitamos globales, pero aquí es didáctico)
-# historial = []
+historial = []
 
 
 def guardar_operacion(num1, num2, operacion, resultado):
@@ -78,34 +78,34 @@ def guardar_operacion(num1, num2, operacion, resultado):
         resultado: Resultado de la operación
     """
     # TODO 2: Crea un diccionario con los datos de la operación
-    # operacion_dict = {
-    #     "num1": num1,
-    #     "num2": num2,
-    #     "operacion": operacion,
-    #     "resultado": resultado
-    # }
+    operacion_dict = {
+        "num1": num1,
+        "num2": num2,
+        "operacion": operacion,
+        "resultado": resultado
+    }
 
     # TODO 3: Añade el diccionario a la lista historial
-    # historial.append(operacion_dict)
+    historial.append(operacion_dict)
 
-    pass
+    
 
 
 def mostrar_historial():
     """Muestra todas las operaciones del historial."""
     # TODO 4: Verifica si el historial está vacío
-    # if not historial:
-    #     print("📭 No hay operaciones en el historial")
-    #     return
+    if not historial:
+        print("📭 No hay operaciones en el historial")
+        return
 
     # TODO 5: Muestra el título
-    # print("\n📜 HISTORIAL DE OPERACIONES:")
+    print("\n📜 HISTORIAL DE OPERACIONES:")
 
     # TODO 6: Itera sobre el historial con enumerate()
     # enumerate() nos da el índice (i) y el elemento (op)
     # El segundo parámetro (1) indica que empiece a contar desde 1
-    # for i, op in enumerate(historial, 1):
-    #     print(f"{i}. {op['num1']} {op['operacion']} {op['num2']} = {op['resultado']:.2f}")
+    for i, op in enumerate(historial, 1):
+        print(f"{i}. {op['num1']} {op['operacion']} {op['num2']} = {op['resultado']:.2f}")
 
     pass
 
@@ -115,49 +115,49 @@ def mostrar_historial():
 def main():
     """Función principal de la calculadora."""
 
-    # while True:
-        # mostrar_menu()
-        # opcion = input("\nElige una opción: ")
+    while True:
+        mostrar_menu()
+        opcion = input("\nElige una opción: ")
 
         # TODO 7: Actualiza la condición de salir (ahora es la opción 6)
-        # if opcion == "6":
-        #     print("¡Hasta pronto! 👋")
-        #     break
+        if opcion == "6":
+            print("¡Hasta pronto! 👋")
+            break
 
         # TODO 8: Añade la nueva opción 5 para ver el historial
-        # if opcion == "5":
-        #     mostrar_historial()
-        #     continue  # Vuelve al menú sin pedir números
+        if opcion == "5":
+            mostrar_historial()
+            continue  # Vuelve al menú sin pedir números
 
         # TODO 9: Actualiza la validación (ahora hay 5 opciones válidas)
-        # if opcion not in ["1", "2", "3", "4", "5"]:
-        #     print("❌ Opción no válida")
-        #     continue
+        if opcion not in ["1", "2", "3", "4", "5"]:
+            print("❌ Opción no válida")
+            continue
 
-        # num1, num2 = obtener_numeros()
+        num1, num2 = obtener_numeros()
 
-        # if opcion == "4" and num2 == 0:
-        #     print("❌ No se puede dividir por cero")
-        #     continue
+        if opcion == "4" and num2 == 0:
+            print("❌ No se puede dividir por cero")
+            continue
 
         # TODO 10: Realiza la operación y guarda en el historial
-        # if opcion == "1":
-        #     resultado = sumar(num1, num2)
-        #     simbolo = "+"
-        # elif opcion == "2":
-        #     resultado = restar(num1, num2)
-        #     simbolo = "-"
-        # elif opcion == "3":
-        #     resultado = multiplicar(num1, num2)
-        #     simbolo = "*"
-        # elif opcion == "4":
-        #     resultado = dividir(num1, num2)
-        #     simbolo = "/"
+        if opcion == "1":
+            resultado = sumar(num1, num2)
+            simbolo = "+"
+        elif opcion == "2":
+            resultado = restar(num1, num2)
+            simbolo = "-"
+        elif opcion == "3":
+            resultado = multiplicar(num1, num2)
+            simbolo = "*"
+        elif opcion == "4":
+            resultado = dividir(num1, num2)
+            simbolo = "/"
 
-        # print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
+        print(f"✅ {num1} {simbolo} {num2} = {resultado:.2f}")
 
         # TODO 11: Guarda la operación en el historial
-        # guardar_operacion(num1, num2, simbolo, resultado)
+        guardar_operacion(num1, num2, simbolo, resultado)
 
     pass
 
