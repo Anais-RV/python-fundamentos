@@ -153,8 +153,8 @@ def limpiar_historial():
 
     # TODO 2: Refactoriza la confirmación con operador morsa
     # Pista: if (confirmacion := input(...).lower()) != "s":
-    confirmacion = input("⚠️  ¿Estás seguro de que quieres limpiar el historial? (s/n): ")
-    if confirmacion.lower() != "s":
+    
+    if (confirmacion := input("⚠️  ¿Estás seguro de que quieres limpiar el historial? (s/n): ").lower()) != "s":
         print("❌ Operación cancelada")
         return
 
@@ -182,25 +182,24 @@ def main():
 
         # TODO 3: Considera si puedes usar operador morsa aquí
         # ¿Se puede combinar mostrar_menu() y input() de alguna manera?
-        opcion = input("\nElige una opción: ")
 
-        if opcion == "7":
+        if (opcion := input("\nElige una opción: ")) == "7":
             print("💾 Guardando historial...")
             guardar_historial_archivo()
             print("¡Hasta pronto! 👋")
             break
 
-        if opcion == "5":
+        if (opcion := input("\nElige una opción: ")) == "5":
             mostrar_historial()
             continue
 
-        if opcion == "6":
+        if (opcion := input("\nElige una opción: ")) == "6":
             limpiar_historial()
             continue
 
         # TODO 4: Refactoriza esta validación con operador morsa
         # Pista: Convierte la opción a número y valida en una sola expresión
-        if opcion not in ["1", "2", "3", "4"]:
+        if (opcion := int(input("\nElige una opción: "))) not in ["1", "2", "3", "4"]:
             print("❌ Opción no válida")
             continue
 
