@@ -1,0 +1,17 @@
+
+1º log:
+| fecha - 2024-10-11 08:11:59 || visita - Visita desde IP 192.168.1.1 |
+2º log:
+| fecha - 2024-10-11 10:30:43 || visita - Visita desde IP 192.168.1.2 |
+3º log:
+| fecha - 2024-10-11 12:41:12 || visita - Visita desde IP 192.168.1.4 |
+4º log:
+| fecha - 2024-10-11 17:30:29 || visita - Visita desde IP 192.168.1.6 |
+5º log:
+| fecha - 2024-10-12 08:10:32 || visita - Visita desde IP 192.168.1.8 |
+6º log:
+| fecha - 2024-10-12 11:11:48 || visita - Visita desde IP 192.168.1.9 |
+7º log:
+| fecha - 2024-10-12 18:21:51 || visita - Visita desde IP 192.168.1.10 |
+8º log:
+| fecha - 2024-10-13 08:04:12 || visita - Visita desde IP 192.168.1.11 |
