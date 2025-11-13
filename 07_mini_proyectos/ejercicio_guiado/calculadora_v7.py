@@ -56,14 +56,14 @@ def dividir(a, b):
 
 def mostrar_menu():
     """Muestra el menú de opciones de la calculadora."""
-    print("\n=== CALCULADORA ===")
-    print("1. Sumar")
-    print("2. Restar")
-    print("3. Multiplicar")
-    print("4. Dividir")
-    print("5. Ver historial")
-    print("6. Limpiar historial")
-    print("7. Salir")
+    print(t := "\n=== CALCULADORA ===")
+    print(s := "1. Sumar")
+    print(r := "2. Restar")
+    print(m := "3. Multiplicar")
+    print(d := "4. Dividir")
+    print(v := "5. Ver historial")
+    print(l := "6. Limpiar historial")
+    print(s := "7. Salir")
 
 
 def obtener_numeros():
@@ -72,7 +72,7 @@ def obtener_numeros():
     # TODO 1: Refactoriza usando operador morsa
     # Combina el input y la validación en una sola expresión
     # Pista: while not (entrada := input(...)).algo():
-
+    ''''''''''''''''
     while True:
         entrada1 = input("Primer número: ")
         try:
@@ -90,6 +90,35 @@ def obtener_numeros():
             print("❌ Ingresa un número válido")
 
     return num1, num2
+    '''''''''''
+    # Método 1:
+    while not (entrada1 := input("Primer número: ")).isdigit():
+        print("❌ Ingresa un número 1 válido")
+    num1 = float(entrada1)
+    while not (entrada2 := input("Segundo número: ")).isdigit():
+        print("❌ Ingresa un número 2 válido")
+    num2 = float(entrada2)
+
+    return num1, num2
+
+    # Método 2:
+    ''''''''''
+    while True: 
+        try:
+            num1 = float(entrada1 := input("Primer número: "))
+            break
+        except ValueError:
+            print("❌ Ingresa un número válido")
+
+    while True:
+        try:
+            num2 = float(entrada2 := input("Segundo número: "))
+            break
+        except ValueError:
+            print("❌ Ingresa un número válido")
+
+    return num1, num2
+    '''''''''''
 
 
 # ===== FUNCIONES DE HISTORIAL (memoria) =====
@@ -182,24 +211,24 @@ def main():
 
         # TODO 3: Considera si puedes usar operador morsa aquí
         # ¿Se puede combinar mostrar_menu() y input() de alguna manera?
-
-        if (opcion := input("\nElige una opción: ")) == "7":
+        opcion = input("\nElige una opción: ")
+        if opcion == "7":
             print("💾 Guardando historial...")
             guardar_historial_archivo()
             print("¡Hasta pronto! 👋")
             break
 
-        if (opcion := input("\nElige una opción: ")) == "5":
+        if opcion == "5":
             mostrar_historial()
             continue
 
-        if (opcion := input("\nElige una opción: ")) == "6":
+        if opcion == "6":
             limpiar_historial()
             continue
 
         # TODO 4: Refactoriza esta validación con operador morsa
         # Pista: Convierte la opción a número y valida en una sola expresión
-        if (opcion := int(input("\nElige una opción: "))) not in ["1", "2", "3", "4"]:
+        if opcion not in ["1", "2", "3", "4"]:
             print("❌ Opción no válida")
             continue
 
