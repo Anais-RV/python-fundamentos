@@ -20,16 +20,26 @@ Instrucciones:
 
 # TODO 1: Pide el primer número al usuario y conviértelo a float
 # num1 = ...
-
+print("Valor 1:")
+first_input = input()
+num1 = int(first_input)
 
 # TODO 2: Pide el segundo número al usuario y conviértelo a float
 # num2 = ...
-
+print("Valor 2:")
+second_input = input()
+num2 = int(second_input)
 
 # TODO 3: Pregunta qué operación desea realizar
 # Pista: input("¿Qué operación deseas realizar? (+, -, *, /): ")
 # operacion = ...
-
+print("¿Operación a realizar?")
+print("0 - Salir")
+print("1 - [+] Sumar")
+print("2 - [-] Restar")
+print("3 - [x] Multiplicar")
+print("4 - [%] Dividir")
+user_sel = input()
 
 # TODO 4: Realiza la operación correspondiente usando if/elif/else
 # Pista: Compara la variable 'operacion' con "+", "-", "*", "/"
@@ -44,7 +54,6 @@ Instrucciones:
 #     ...
 # else:
 #     print("❌ Operación no válida")
-
 
 # TODO 5: Muestra el resultado usando f-strings
 # Pista: f"El resultado de {num1} {operacion} {num2} = {resultado:.2f}"
@@ -63,3 +72,21 @@ Instrucciones:
 #
 # 💡 Nota: Si intentas dividir por cero (10 / 0), Python mostrará un error.
 #    Esto lo arreglaremos en la v3 con validación de entrada.
+if user_sel == "0":
+  print("Ten un buen día.")
+  exit()
+elif user_sel == "1":
+  print(f"{num1 + num2}")
+  exit()
+elif user_sel == "2":
+  print(f"{num1 - num2}")
+  exit()
+elif user_sel == "3":
+  print(f"{num1 * num2}")
+  exit()
+elif user_sel == "4":
+  print(f"{num1 / num2}")
+  exit()
+else:
+  print("Operación no válida")
+  exit()
